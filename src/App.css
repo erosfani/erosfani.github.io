@@ -42,8 +42,8 @@
 }
 
 .logo-circle {
-  width: 2em;
-  height: 2em;
+  width: 2.2em;
+  height: 2.2em;
   border-radius: 50%;       /* makes the image circular */
   object-fit: cover;        /* ensures the image fills the circle */
   padding: 2px;

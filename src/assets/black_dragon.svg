@@ -1,10 +1,9 @@
 <?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
+ width="400pt" height="400pt" viewBox="-27 -27 342 342"
  preserveAspectRatio="xMidYMid meet">
-
+<circle cx="144" cy="144" r="170" fill="#ffffff" />
 <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
 <path d="M1261 2630 c-110 -23 -221 -72 -326 -143 -98 -67 -230 -209 -410
