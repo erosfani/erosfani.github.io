@@ -55,6 +55,36 @@ strong:hover {
   box-shadow: 0 0 16px rgba(255, 128, 0, 0.45);
 }
 
+.justify-left {
+  text-align: left;
+  padding-left: 3%;
+}
+
+.svg-about:hover {
+  fill: #ff8000;
+}
+
+/*.svg-about:active {*/
+/*  fill: #0033ff;*/
+/*  color: #ffffff;*/
+/*}*/
+
+.about-button {
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 2px solid rgb(204, 204, 204);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 2%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, color 0.3s ease;
+  color: black;
+}
+
+.about-button:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(255, 128, 0, 0.45);
+  border: 2px solid #ff8000;
+  color: #ff8000;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;

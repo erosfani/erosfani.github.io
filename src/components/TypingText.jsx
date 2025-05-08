@@ -38,7 +38,7 @@ function TypingText({ text_before, text_highlight, text_after, speed = 100 }) {
     : '';
 
   return (
-    <span>
+    <div style={{minHeight: '1.3em'}}>
       {before}
       {highlight && (
         <strong
@@ -49,7 +49,7 @@ function TypingText({ text_before, text_highlight, text_after, speed = 100 }) {
         </strong>
       )}
       {after}
-    </span>
+    </div>
   );
 }
 
