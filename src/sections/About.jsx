@@ -21,10 +21,22 @@ const About = () => {
         <Col xs={4}>
           <img src={profile} alt="Profile" className='profile' />
           <Container className="mb-lg-5" fluid>
-            <Button size='lg' className='about-button'> <Scholar /> </Button>
-            <Button size='lg' className='about-button'> <Github /> </Button>
-            <Button size='lg' className='about-button'> <LinkedIn /> </Button>
-            <Button size='lg' className='about-button'> <strong> CV </strong> </Button>
+            <Button size='lg' className='about-button' onClick={() =>
+              window.open('https://scholar.google.com/citations?user=rwto7AgAAAAJ&hl=en', '_blank')}>
+              <Scholar />
+            </Button>
+            <Button size='lg' className='about-button' onClick={() =>
+              window.open('https://github.com/Erosinho13', '_blank')}>
+              <Github />
+            </Button>
+            <Button size='lg' className='about-button' onClick={() =>
+              window.open('https://www.linkedin.com/in/eros-fani/', '_blank')}>
+              <LinkedIn />
+            </Button>
+            <Button size='lg' className='about-button' onClick={() =>
+              window.open('about:blank', '_blank')}>
+              <strong> CV </strong>
+            </Button>
           </Container>
         </Col>
         <Col xs={7}>
@@ -63,8 +75,6 @@ const About = () => {
                 <strong> Domain Adaptation</strong>,
                 <strong> Domain Generalization</strong>,
                 and <strong> Semi-Supervised Learning</strong>.
-                I am eager to contribute to groundbreaking advancements and open new opportunities for my
-                professional development.
               </p>
 
             </Card.Body>

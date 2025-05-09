@@ -10,6 +10,18 @@ strong:hover {
   color: #ff8000;
 }
 
+nav {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);;
+}
+
+main > div:nth-child(odd) {
+  background-color: #f4f4f4;
+}
+
+main > div:nth-child(even) {
+  background-color: #ffffff;
+}
+
 .typing-text {
   transition: color 1s ease;
 }
@@ -23,12 +35,48 @@ strong:hover {
   margin-right: .5em;
   border: 3px solid #cccccc;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* optional: soft shadow */
-  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.001s ease;
 }
 
-.logo-circle:hover {
+.navbar-brand:hover .logo-circle {
   border: 3px solid #ff8000;
-  box-shadow: 0 0 12px rgba(255, 128, 0, 0.45);
+  box-shadow: 0 0 12px #ff800072;
+  fill: #ff8000;
+}
+
+.navbar-brand strong {
+  transition: all 0.001s ease;
+}
+
+/*.navbar-brand.active_tab strong {*/
+/*  color: #001d93;*/
+/*}*/
+
+/*.navbar-brand.active_tab svg {*/
+/*  fill: #001d93;*/
+/*}*/
+
+.navbar-brand:hover strong, .navbar-brand.active_tab:hover strong {
+  color: #ff8000;
+  text-shadow: 0 0 2px #ff800072;
+}
+
+.nav-link {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.nav-link.active_tab {
+  color: #001d93;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff8000;
+}
+
+.nav-link:active {
+  color: #ff8000;
 }
 
 .section {
@@ -52,7 +100,7 @@ strong:hover {
 
 .profile:hover {
   border: 5px solid #ff8000;
-  box-shadow: 0 0 16px rgba(255, 128, 0, 0.45);
+  box-shadow: 0 0 16px #ff800072;
 }
 
 .justify-left {
@@ -64,10 +112,9 @@ strong:hover {
   fill: #ff8000;
 }
 
-/*.svg-about:active {*/
-/*  fill: #0033ff;*/
-/*  color: #ffffff;*/
-/*}*/
+.svg-about:active {
+  fill: #ffffff;
+}
 
 .about-button {
   background-color: rgba(0, 0, 0, 0.01);
@@ -80,28 +127,23 @@ strong:hover {
 
 .about-button:hover {
   background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(255, 128, 0, 0.45);
+  box-shadow: 0 0 15px #ff800072;
   border: 2px solid #ff8000;
   color: #ff8000;
+}
+
+.about-button:active {
+  background-color: #0033ff;
+  box-shadow: 0 0 15px #001d93;
+  border: 2px solid #001d93;
+  color: #ffffff;
+}
+
+.about-button strong:active {
+  color: #ffffff;
 }
 
 #root {
   margin: 0 auto;
   text-align: center;
-}
-
-#about {
-  background: #f4f4f4;
-}
-
-#jobs {
-  background: #f8fbff;
-}
-
-#education {
-  background: #fff9f7;
-}
-
-#publications {
-  background: #f9fff8;
 }
