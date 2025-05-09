@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
 
     const handleScroll = () => {
-      const sections = ['about', 'jobs', 'education', 'publications'];
+      const sections = ['about', 'experience', 'education', 'publications'];
       let current = '';
 
       sections.forEach(id => {
@@ -38,10 +38,10 @@ function App() {
       <main>
         <About />
 
-        <Container fluid id="jobs" className='section'>
+        <Container fluid id="experience" className='section'>
           <Row>
             <Col>
-              Jobs
+              Experience
             </Col>
           </Row>
         </Container>

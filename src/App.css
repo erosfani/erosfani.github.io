@@ -67,15 +67,12 @@ main > div:nth-child(even) {
 }
 
 .nav-link.active_tab {
-  color: #001d93;
+  color: #ff8000;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-  color: #ff8000;
-}
-
-.nav-link:active {
   color: #ff8000;
 }
 
@@ -143,6 +140,43 @@ main > div:nth-child(even) {
   color: #ffffff;
 }
 
+.card-footer {
+  padding-bottom: 0;
+}
+
+.card-footer ul {
+  margin-bottom: 0;
+}
+
+.new-page-button {
+  padding: 0;
+  margin: 5px 5px 10px 8px;
+  background-color: rgba(0, 0, 0, 0.01);
+  border: 2px solid rgb(204, 204, 204);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, color 0.3s ease;
+  color: black;
+  align-content: center;
+}
+
+.new-page-button:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 15px #ff800072;
+  border: 2px solid #ff8000;
+  color: #ff8000;
+}
+
+.new-page-button:active {
+  background-color: #0033ff;
+  box-shadow: 0 0 15px #001d93;
+  border: 2px solid #001d93;
+  fill: #ffffff;
+}
+
+.new-page-button strong:active {
+  color: #ffffff;
+}
+
 .contacts {
   padding: 4%;
   width: 75%;
@@ -161,6 +195,10 @@ main > div:nth-child(even) {
 .contacts a:hover {
   color: #0033ff;
   text-decoration: underline;
+}
+
+#presentation h1 {
+  margin-left: 17px;
 }
 
 #root {

@@ -25,9 +25,9 @@ function NavigationBar(props) {
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#jobs" active=""
-                      className={props.activeSection === 'jobs' ? 'active_tab' : undefined}>
-              Professional experience
+            <Nav.Link href="#experience" active=""
+                      className={props.activeSection === 'experience' ? 'active_tab' : undefined}>
+              Experience
             </Nav.Link>
             <Nav.Link href="#education" active=""
                       className={props.activeSection === 'education' ? 'active_tab' : undefined}>
