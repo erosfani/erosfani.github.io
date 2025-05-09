@@ -6,7 +6,7 @@ strong {
   transition: color 0.3s ease;
 }
 
-strong:hover {
+h1 strong:hover {
   color: #ff8000;
 }
 
@@ -141,6 +141,26 @@ main > div:nth-child(even) {
 
 .about-button strong:active {
   color: #ffffff;
+}
+
+.contacts {
+  padding: 4%;
+  width: 75%;
+  color: black;
+  background-color: #f4f4f4;
+}
+
+.contacts a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: large;
+  color: black;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  color: #0033ff;
+  text-decoration: underline;
 }
 
 #root {

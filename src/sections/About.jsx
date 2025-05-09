@@ -1,4 +1,4 @@
-import {Button, Card, Col, Container, Row} from "react-bootstrap";
+import {Badge, Button, Card, Col, Container, Row} from "react-bootstrap";
 import TypingText from "../components/TypingText.jsx";
 import profile from "../assets/profile.jpg";
 import Scholar from "../components/logos/Scholar.jsx";
@@ -19,25 +19,31 @@ const About = () => {
       </Row>
       <Row>
         <Col xs={4}>
-          <img src={profile} alt="Profile" className='profile' />
-          <Container className="mb-lg-5" fluid>
+          <img src={profile} alt="Profile" className='profile'/>
+          <Container className="mb-lg-2" fluid>
             <Button size='lg' className='about-button' onClick={() =>
               window.open('https://scholar.google.com/citations?user=rwto7AgAAAAJ&hl=en', '_blank')}>
-              <Scholar />
+              <Scholar/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
               window.open('https://github.com/Erosinho13', '_blank')}>
-              <Github />
+              <Github/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
               window.open('https://www.linkedin.com/in/eros-fani/', '_blank')}>
-              <LinkedIn />
+              <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
               window.open('about:blank', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
+
+          <Badge className='contacts' bg=''>
+            <a href='mailto:eros.fani@polito.it'> eros.fani@polito.it </a>
+            <a href='mailto:efani@bcamath.org'> efani@bcamath.org </a>
+          </Badge>
+
         </Col>
         <Col xs={7}>
           <Card className='p-lg-5 mb-5'>
