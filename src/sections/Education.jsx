@@ -113,7 +113,7 @@ function Education() {
                 <h5> {edu.org} </h5>
 
                 {edu.description ?
-                  <Card.Text> {edu.description} </Card.Text> : null}
+                  <Card.Text style={{ whiteSpace: 'pre-line' }}> {edu.description} </Card.Text> : null}
 
                 {edu.grade || edu.thesis ?
                 <Card.Text>
