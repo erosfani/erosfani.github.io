@@ -99,7 +99,7 @@ function Experience() {
           } style={exp.color_from ? {
             borderLeft: '5px solid',
             borderImage: 'linear-gradient(to bottom, ' + exp.color + ' 65%, ' + exp.color_from + ' 100%) 1 100%'
-          } : null
+          } : {'--timelineColor': exp.color}
           }>
             <div className={index === 0 ?
               'timeline-dot timeline-dot-first' : (

@@ -5,6 +5,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import About from "./sections/About.jsx";
 import {useState, useEffect} from "react";
 import Experience from "./sections/Experience.jsx";
+import Education from "./sections/Education.jsx";
 
 function App() {
 
@@ -41,13 +42,7 @@ function App() {
 
         <Experience />
 
-        <Container fluid id="education" className='section'>
-          <Row>
-            <Col>
-            Education
-            </Col>
-          </Row>
-        </Container>
+        <Education />
 
         <Container fluid id="publications" className='section'>
           <Row>

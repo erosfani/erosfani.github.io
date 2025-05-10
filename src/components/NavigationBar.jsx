@@ -1,4 +1,3 @@
-import EF_logo from '../assets/black_dragon.svg'
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Dragon from "./logos/Dragon.jsx";
 
