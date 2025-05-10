@@ -197,6 +197,75 @@ main > div:nth-child(even) {
   text-decoration: underline;
 }
 
+.section-title {
+  margin-bottom: 30px;
+}
+
+.timeline {
+  border-left: 5px solid #001d93;
+}
+
+.timeline-first {
+  margin-top: 70px;
+}
+
+.timeline-last {
+  margin-bottom: 165px;
+}
+
+.timeline-dot {
+  position: relative;
+  left: -35px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--timelineColor, #001d93);
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 0 5px var(--timelineColor, #001d93);
+}
+
+.timeline-dot:hover {
+  box-shadow: 0 0 5px 5px var(--timelineColor, #001d93);
+}
+
+.timeline-dot-all {
+  top: 40%;
+}
+
+.timeline-dot-first {
+  top: 0;
+}
+
+.timeline-dot-last {
+  bottom: -100%;
+}
+
+.timeline-card {
+  display: block;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  padding: 20px 15px 15px 15px;
+  background-color: rgba(244, 244, 244, 0.5);
+  border: 2px solid #00000019;
+  transition: all 0.3s ease;
+}
+
+.timeline-card .card-body {
+  padding: 0;
+}
+
+.timeline-card:hover {
+  box-shadow: 0 0 15px #CCCCCCFF;
+}
+
+.timeline-date-loc {
+  display: inline-block;
+  width: 50%;
+  align-content: center;
+  margin-top: 10px;
+}
+
+
 #presentation h1 {
   margin-left: 17px;
 }

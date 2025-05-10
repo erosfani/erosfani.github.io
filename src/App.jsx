@@ -4,6 +4,7 @@ import NavigationBar from "./components/NavigationBar.jsx";
 import {Col, Container, Row} from "react-bootstrap";
 import About from "./sections/About.jsx";
 import {useState, useEffect} from "react";
+import Experience from "./sections/Experience.jsx";
 
 function App() {
 
@@ -38,13 +39,7 @@ function App() {
       <main>
         <About />
 
-        <Container fluid id="experience" className='section'>
-          <Row>
-            <Col>
-              Experience
-            </Col>
-          </Row>
-        </Container>
+        <Experience />
 
         <Container fluid id="education" className='section'>
           <Row>

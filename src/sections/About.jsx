@@ -57,7 +57,7 @@ const About = () => {
                 I am an <strong> ELLIS Ph.D. candidate </strong>
                 at the Visual and Multimodal Applied Learning Laboratory
                 within the Artificial Intelligence Hub
-                at the <strong> Polytechnic University of Turin </strong>.
+                at the <strong> Polytechnic University of Turin</strong>.
 
                 Additionally, I am a <strong> Research Fellow </strong>
                 at the <strong> Basque Center for Applied Mathematics</strong>,
@@ -75,8 +75,8 @@ const About = () => {
                 <strong> IROS</strong>,
                 and <strong> WACV</strong>.
                 Furthermore, I have served as a reviewer for various international conferences and journals,
-                and I was recently honored as one of the <strong> Outstanding Reviewers </strong>
-                of <strong> ECCV </strong> in 2024.
+                and I was recently honored as an <strong> Outstanding Reviewer </strong>
+                at <strong> ECCV </strong> in 2024.
               </p>
 
               <p>
