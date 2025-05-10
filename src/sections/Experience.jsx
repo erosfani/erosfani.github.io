@@ -88,7 +88,7 @@ function Experience() {
       </Row>
       {experiences.map((exp, index) => (
         <Row key={index}>
-          <Col xs={3}>
+          <Col xs={1}>
           </Col>
           <Col xs={1} className={
             index === 0 ?
@@ -108,7 +108,7 @@ function Experience() {
                   'timeline-dot timeline-dot-all')
             } style={{'--timelineColor': exp.color}}> </div>
           </Col>
-          <Col xs={8}>
+          <Col xs={10}>
             <Card className='timeline-card'>
               <Card.Title> <h3> {exp.role} </h3> </Card.Title>
               <Card.Body>

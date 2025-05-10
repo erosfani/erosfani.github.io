@@ -86,7 +86,7 @@ function Education() {
       </Row>
       {educations.map((edu, index) => (
         <Row key={index}>
-          <Col xs={3}>
+          <Col xs={1}>
           </Col>
           <Col xs={1} className={
             index === 0 ?
@@ -106,7 +106,7 @@ function Education() {
                   'timeline-dot timeline-dot-all')
             } style={{'--timelineColor': edu.color}}> </div>
           </Col>
-          <Col xs={8}>
+          <Col xs={10}>
             <Card className='timeline-card timeline-card-white'>
               <Card.Title> <h3> {edu.course} </h3> </Card.Title>
               <Card.Body>
