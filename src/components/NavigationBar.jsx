@@ -7,7 +7,7 @@ function NavigationBar(props) {
 
     <Navbar className='navbar navbar-expand-sm navbar-light bg-light fixed-top'>
 
-      <Container className='mx-lg-5'>
+      <Container className='mx-auto'>
 
         <Navbar.Brand href="#about" active=""
                       className={props.activeSection === 'about' ? 'active_tab' : undefined}>
@@ -35,6 +35,30 @@ function NavigationBar(props) {
             <Nav.Link href="#publications" active=""
                       className={props.activeSection === 'publications' ? 'active_tab' : undefined}>
               Publications
+            </Nav.Link>
+            <Nav.Link href="#reviews" active=""
+                      className={props.activeSection === 'reviews' ? 'active_tab' : undefined}>
+              Peer Reviewing
+            </Nav.Link>
+            <Nav.Link href="#certifications" active=""
+                      className={props.activeSection === 'certifications' ? 'active_tab' : undefined}>
+              Certifications
+            </Nav.Link>
+            <Nav.Link href="#dissemination" active=""
+                      className={props.activeSection === 'dissemination' ? 'active_tab' : undefined}>
+              Dissemination
+            </Nav.Link>
+            <Nav.Link href="#honors-and-awards" active=""
+                      className={props.activeSection === 'honors-and-awards' ? 'active_tab' : undefined}>
+              Honors & Awards
+            </Nav.Link>
+            <Nav.Link href="#projects" active=""
+                      className={props.activeSection === 'projects' ? 'active_tab' : undefined}>
+              Projects
+            </Nav.Link>
+            <Nav.Link href="#achievements" active=""
+                      className={props.activeSection === 'achievements' ? 'active_tab' : undefined}>
+              Achievements
             </Nav.Link>
           </Nav>
 

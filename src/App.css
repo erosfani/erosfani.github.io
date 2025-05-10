@@ -38,6 +38,10 @@ main > div:nth-child(even) {
   transition: all 0.001s ease;
 }
 
+.navbar {
+  align-content: center;
+}
+
 .navbar-brand:hover .logo-circle {
   border: 3px solid #ff8000;
   box-shadow: 0 0 12px #ff800072;

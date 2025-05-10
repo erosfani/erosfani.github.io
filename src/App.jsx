@@ -14,7 +14,8 @@ function App() {
   useEffect(() => {
 
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'education', 'publications'];
+      const sections = ['about', 'experience', 'education', 'publications', 'reviews', 'certifications',
+                                'dissemination', 'honors-and-awards', 'projects', 'achievements'];
       let current = '';
 
       sections.forEach(id => {
@@ -51,6 +52,55 @@ function App() {
             </Col>
           </Row>
         </Container>
+
+        <Container fluid id="reviews" className='section'>
+          <Row>
+            <Col>
+              Peer Reviewing
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid id="certifications" className='section'>
+          <Row>
+            <Col>
+              Certifications
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid id="dissemination" className='section'>
+          <Row>
+            <Col>
+              Dissemination
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid id="honors-and-awards" className='section'>
+          <Row>
+            <Col>
+              Honors & Awards
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid id="projects" className='section'>
+          <Row>
+            <Col>
+              Projects
+            </Col>
+          </Row>
+        </Container>
+
+        <Container fluid id="achievements" className='section'>
+          <Row>
+            <Col>
+              Achievements
+            </Col>
+          </Row>
+        </Container>
+
       </main>
     </>
   )
