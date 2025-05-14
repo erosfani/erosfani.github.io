@@ -49,9 +49,9 @@ const About = () => {
         <Col xs={7}>
           <Card className='p-lg-5 mb-5 about'>
 
-            <Card.Title> <h2> About me </h2> </Card.Title>
+            <CardGroup> <h2> About me </h2> </CardGroup>
 
-            <Card.Body style={{marginBottom: '-1em'}}>
+            <Card.Footer style={{textAlign: 'left', backgroundColor: 'white', marginBottom: '1em', paddingTop: '1em'}}>
 
               <p>
                 I am an <strong> ELLIS Ph.D. candidate </strong>
@@ -89,7 +89,7 @@ const About = () => {
                 and <strong> Semi-Supervised Learning</strong>.
               </p>
 
-            </Card.Body>
+            </Card.Footer>
 
             <CardGroup> <h4> Affiliations </h4> </CardGroup>
 
