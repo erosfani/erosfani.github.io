@@ -35,7 +35,7 @@ const About = () => {
               <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
-              window.open('about:blank', '_blank')}>
+              window.open('empty.html', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
