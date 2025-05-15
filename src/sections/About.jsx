@@ -54,10 +54,12 @@ const About = () => {
             <Card.Footer style={{textAlign: 'left', backgroundColor: 'white', marginBottom: '1em', paddingTop: '1em'}}>
 
               <p>
-                I am an <strong> ELLIS Ph.D. candidate </strong>
+                I am a <strong> Ph.D. candidate </strong>
                 at the Visual and Multimodal Applied Learning Laboratory
                 within the Artificial Intelligence Hub
-                at the <strong> Polytechnic University of Turin</strong>.
+                at the <strong> Polytechnic University of Turin</strong>, in the
+                European Laboratory fo Learning and Intelligent Systems (<strong>ELLIS</strong>)
+                <strong> Ph.D. program</strong>.
 
                 Additionally, I am a <strong> Research Fellow </strong>
                 at the <strong> Basque Center for Applied Mathematics</strong>,
@@ -70,10 +72,10 @@ const About = () => {
                 I have had the opportunity to publish and present my papers at several international peer-reviewed
                 conferences and workshops, including
                 <strong> ICML</strong>,
-                <strong> CVPR</strong>,
                 <strong> NeurIPS</strong>,
+                <strong> CVPR</strong>,
                 <strong> IROS</strong>,
-                and <strong> WACV</strong>.
+                and <strong> WACV</strong>, and to an <strong> IEEE </strong> journal.
                 Furthermore, I have served as a reviewer for various international conferences and journals,
                 and I was recently honored as an <strong> Outstanding Reviewer </strong>
                 at <strong> ECCV </strong> in 2024.
@@ -98,31 +100,31 @@ const About = () => {
               <ul>
 
                 <li>
-                  Basque Center for Applied Mathematics (BCAM)
-                  <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' />
+                  Basque Center for Applied Mathematics <span className="bind"> (BCAM)
+                  <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' /> </span>
                 </li>
 
                 <li> Polytechnic University of Turin (PoliTo):</li>
                 <ul>
                   <li>
-                    Department of Control and Computer Engineering (DAUIN)
-                    <NewPageButton url='https://www.polito.it/en/staff?p=eros.fani' />
+                    Department of Control and Computer Engineering <span className="bind"> (DAUIN)
+                    <NewPageButton url='https://www.polito.it/en/staff?p=eros.fani' /> </span>
                   </li>
                   <li>
                     Artificial Intelligence Hub (AIH),
-                    Visual And Multimodal Applied Learning Laboratory (VANDAL)
-                    <NewPageButton url='https://vandal.polito.it/index.php/people/' />
+                    Visual And Multimodal Applied Learning Laboratory <span className="bind"> (VANDAL)
+                    <NewPageButton url='https://vandal.polito.it/index.php/people/' /> </span>
                   </li>
                 </ul>
 
                 <li>
-                  University of Sussex, Predictive Analytics Lab
-                  <NewPageButton url='https://wearepal.ai/team' />
+                  University of Sussex, Predictive Analytics <span className="bind"> Lab
+                  <NewPageButton url='https://wearepal.ai/team' /> </span>
                 </li>
 
                 <li>
-                  European Laboratory fo Learning and Intelligent Systems (ELLIS)
-                  <NewPageButton url='https://ellis.eu/phd-postdoc' />
+                  European Laboratory for Learning and Intelligent Systems <span className="bind"> (ELLIS)
+                  <NewPageButton url='https://ellis.eu/phd-postdoc' /> </span>
                 </li>
 
               </ul>
