@@ -53,7 +53,7 @@ function Education() {
       org: 'Polytechnic University of Turin',
       date: 'Oct 2016 - Jul 2019',
       location: 'Turin, Italy',
-      grade: '118/110',
+      grade: '108/110',
       color: '#098a04',
     },
     {
