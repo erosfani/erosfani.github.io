@@ -7,6 +7,7 @@ import {useState, useEffect} from "react";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
 import Publications from "./sections/Publications.jsx";
+import LastUpdateDate from "./components/LastUpdateDate.jsx";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
       <NavigationBar activeSection={activeSection} />
 
       <main>
+
         <About />
 
         <Experience />
@@ -97,6 +99,13 @@ function App() {
         </Container>
 
       </main>
+
+      <footer className="footer">
+
+        <span> <strong> Eros Fanì </strong> - All rights reserved. </span>
+        <br/>
+        <span style={{color: 'grey'}}> Last update: <LastUpdateDate /> </span>
+      </footer>
     </>
   )
 }
