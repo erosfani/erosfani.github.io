@@ -58,7 +58,7 @@ function Publications() {
       },
       website: "",
       code: "",
-      teaser_url: "src/assets/teasers/feddiverse.png",
+      teaser_url: "assets/teasers/feddiverse.png",
       description: "Federated Learning suffers from statistical heterogeneity due to imbalanced and non-IID client data. Six metrics are introduced to quantify this issue, and seven datasets are created to reflect real-world scenarios. A new client selection method, FedDiverse, improves performance by encouraging collaboration between diverse clients with minimal overhead."
     },
 
@@ -97,7 +97,7 @@ function Publications() {
       },
       website: "https://fed-3r.github.io/",
       code: "https://github.com/Erosinho13/Fed3R",
-      teaser_url: "src/assets/teasers/fed3r_access.png",
+      teaser_url: "assets/teasers/fed3r_access.png",
       description: "Statistical heterogeneity in Federated Learning causes client drift, especially in classification layers. Fed3R solves this problem by constructing a closed-form ridge classifier immune to statistical heterogeneity which can also serve as a strong initialization for FL/Personalized FL methods. Additionally, OLL simplifies local classifiers by focusing on local classes, improving efficiency and accuracy."
     },
 
@@ -139,7 +139,7 @@ function Publications() {
       },
       website: "",
       code: "",
-      teaser_url: "src/assets/teasers/fedgwc.png",
+      teaser_url: "assets/teasers/fedgwc.png",
       description: "Conventional Federated Learning struggles with data heterogeneity and class imbalance. FedGWC, a new clustered FL method, groups clients using a Gaussian reward-based interaction method to enhance personalization and robustness. A novel clustering metric, the Wasserstein Adjusted Score, evaluates cluster cohesion. Experiments show that FedGWC improves both cluster quality and accuracy over existing methods."
     },
 
@@ -177,7 +177,7 @@ function Publications() {
       },
       website: "https://fed-3r.github.io/",
       code: "https://github.com/Erosinho13/Fed3R",
-      teaser_url: "src/assets/teasers/fed3r.png",
+      teaser_url: "assets/teasers/fed3r.png",
       description: "Non-IID data in Federated Learning leads to client drift and poor convergence. Fed3R addresses this by computing a closed-form Ridge Regression classifier using pre-trained features, offering robustness to heterogeneity and client sampling. When used as initialization (Fed3R+FT), it further boosts performance while stabilizing training."
     },
 
@@ -224,7 +224,7 @@ function Publications() {
       },
       website: "",
       code: "https://github.com/mattiadutto/geolocalization-in-federated-learning",
-      teaser_url: "src/assets/teasers/fedvpr.png",
+      teaser_url: "assets/teasers/fedvpr.png",
       description: "Visual Place Recognition (VPR) is reframed as a Federated Learning task with FedVPR, adapting contrastive learning training and data mining to this scenario. This introduces a novel, realistic benchmark for FL, paving the way for broader use in image retrieval tasks."
     },
 
@@ -262,7 +262,7 @@ function Publications() {
       },
       website: "https://fed-3r.github.io/",
       code: "https://github.com/Erosinho13/Fed3R",
-      teaser_url: "src/assets/teasers/fed3r_workshop.png",
+      teaser_url: "assets/teasers/fed3r_workshop.png",
       description: "Fed3R replaces the softmax classifier in Federated Learning with a closed-form ridge regression classifier robust to statistical heterogeneity. Fed3R convergences fast with low communication costs. Its incremental formulation is equivalent to the centralized solution using fixed pre-trained features, allowing for the usage of large feature extractors in FL, as backpropagation is not required. Moreover, Fed3R-RF achieves near-centralized accuracy with minimal overhead."
     },
 
@@ -296,7 +296,7 @@ function Publications() {
       },
       website: "https://feddrive.github.io/",
       code: "https://github.com/Erosinho13/FedDrive",
-      teaser_url: "src/assets/teasers/feddrive_v2.png",
+      teaser_url: "assets/teasers/feddrive_v2.png",
       description: "FedDrive v2 extends the FedDrive benchmark for semantic segmentation in autonomous driving in the Federated Learning setting by focusing on label distribution skewness across clients. Six new scenarios are introduced to analyze its impact compared to domain shift, along with an evaluation of using domain information at test time."
     },
 
@@ -357,7 +357,7 @@ function Publications() {
       },
       website: "",
       code: "https://github.com/Erosinho13/LADD",
-      teaser_url: "src/assets/teasers/ladd.png",
+      teaser_url: "assets/teasers/ladd.png",
       description: "FFreeDA is a new Federated Learning task for Semantic Segmentation where only the server has labeled data, and clients are fully unlabeled. LADD combines self-supervised learning with style-based federated clustering and regularization to address this problem, outperforming the baselines in this challenging setting."
     },
 
@@ -410,7 +410,7 @@ function Publications() {
       },
       website: "https://feddrive.github.io/",
       code: "https://github.com/Erosinho13/FedDrive",
-      teaser_url: "src/assets/teasers/feddrive.png",
+      teaser_url: "assets/teasers/feddrive.png",
       description: "FedDrive is the first benchmark to address Semantic Segmentation in Federated Learning for autonomous driving, introducing three settings and two datasets with real-world challenges like heterogeneity and domain shifts. It highlights the importance of handling batch normalization statistics correctly and shows that style transfer improves generalization under domain shift."
     },
 
