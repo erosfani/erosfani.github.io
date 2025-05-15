@@ -273,6 +273,55 @@ main > div:nth-child(even) {
   margin-top: 10px;
 }
 
+.publications-section {
+  padding-bottom: 50px;
+}
+
+.publication {
+  border-bottom: 2px solid #00000019;
+  padding: 1em;
+}
+
+.publication:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.publication-description {
+  text-align: left;
+}
+
+.publication-button {
+  margin: 0 5px 0 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 7px;
+}
+
+.publication-button:hover {
+  box-shadow: 0 0 5px #ff800072;
+}
+
+.publication-tldr {
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid #00000019;
+}
+
+.section-footnote {
+  text-align: left;
+  display: flex;
+  margin: 1em;
+}
+
+.teaser {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.custom-backdrop {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust transparency here */
+}
 
 #presentation h1 {
   margin-left: 17px;

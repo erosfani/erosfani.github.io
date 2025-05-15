@@ -6,6 +6,7 @@ import About from "./sections/About.jsx";
 import {useState, useEffect} from "react";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
+import Publications from "./sections/Publications.jsx";
 
 function App() {
 
@@ -45,13 +46,7 @@ function App() {
 
         <Education />
 
-        <Container fluid id="publications" className='section'>
-          <Row>
-            <Col>
-              Publications
-            </Col>
-          </Row>
-        </Container>
+        <Publications />
 
         <Container fluid id="reviews" className='section'>
           <Row>
