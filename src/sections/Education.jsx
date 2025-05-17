@@ -1,4 +1,5 @@
 import {Card, Col, Container, Row} from "react-bootstrap";
+import getWindowWidth from "../components/getWindowWidth.jsx";
 
 function Education() {
 
@@ -77,6 +78,8 @@ function Education() {
 
   ]
 
+  const width = getWindowWidth();
+
   return (
     <Container fluid id="education" className="section">
       <Row>
@@ -86,15 +89,15 @@ function Education() {
       </Row>
       {educations.map((edu, index) => (
         <Row key={index}>
-          <Col xs={1}>
+          <Col xs={1} className="d-none d-sm-block">
           </Col>
-          <Col xs={1} className={
+          <Col xs={1} className={`d-none d-sm-block ${
             index === 0 ?
               'timeline timeline-first' : (
                 index === educations.length - 1 ?
                   'timeline timeline-last' :
                   'timeline')
-          } style={edu.color_from ? {
+          }`} style={edu.color_from ? {
             borderLeft: '5px solid',
             borderImage: 'linear-gradient(to bottom, ' + edu.color + ' 65%, ' + edu.color_from + ' 100%) 1 100%'
           } : {'--timelineColor': edu.color}
@@ -106,7 +109,7 @@ function Education() {
                   'timeline-dot timeline-dot-all')
             } style={{'--timelineColor': edu.color}}> </div>
           </Col>
-          <Col xs={10}>
+          <Col xs={width < 576 ? 12 : 10}>
             <Card className='timeline-card timeline-card-white'>
               <Card.Title> <h3> {edu.course} </h3> </Card.Title>
               <Card.Body>

@@ -257,7 +257,6 @@ main > div:nth-child(even) {
 
 .timeline-card {
   display: block;
-  margin-right: 90px;
   margin-bottom: 40px;
   padding: 20px 15px 15px 15px;
   background-color: rgba(244, 244, 244, 0.5);
@@ -347,10 +346,4 @@ main > div:nth-child(even) {
 #root {
   margin: 0 auto;
   text-align: center;
-}
-
-@media (max-width: 576px) {
-  .section {
-    flex-direction: column;
-  }
 }

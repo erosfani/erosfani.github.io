@@ -1,4 +1,5 @@
 import {Card, Col, Container, Row} from "react-bootstrap";
+import getWindowWidth from "../components/getWindowWidth.jsx";
 
 function Experience() {
 
@@ -79,6 +80,8 @@ function Experience() {
     },
   ];
 
+  const width = getWindowWidth();
+
   return (
     <Container fluid id="experience" className="section">
       <Row>
@@ -88,15 +91,15 @@ function Experience() {
       </Row>
       {experiences.map((exp, index) => (
         <Row key={index}>
-          <Col xs={1}>
+          <Col xs={1} className="d-none d-sm-block">
           </Col>
-          <Col xs={1} className={
+          <Col xs={1} className={`d-none d-sm-block ${
             index === 0 ?
               'timeline timeline-first' : (
                 index === experiences.length - 1 ?
                   'timeline timeline-last' :
                   'timeline')
-          } style={exp.color_from ? {
+          }`} style={exp.color_from ? {
             borderLeft: '5px solid',
             borderImage: 'linear-gradient(to bottom, ' + exp.color + ' 65%, ' + exp.color_from + ' 100%) 1 100%'
           } : {'--timelineColor': exp.color}
@@ -108,7 +111,7 @@ function Experience() {
                   'timeline-dot timeline-dot-all')
             } style={{'--timelineColor': exp.color}}> </div>
           </Col>
-          <Col xs={10}>
+          <Col xs={width < 576 ? 12 : 10}>
             <Card className='timeline-card'>
               <Card.Title> <h3> {exp.role} </h3> </Card.Title>
               <Card.Body>
