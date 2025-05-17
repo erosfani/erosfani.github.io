@@ -429,7 +429,7 @@ function Publications() {
       {
         publications.map((publication, index) => (
           <Row key={index} className="publication" style={index === 0 ? {borderTop: "2px solid #00000019"} : null}>
-            <Col xs={8} className='publication-description'>
+            <Col xs={12} md={8} className='publication-description'>
               <h5>
                 {
                   (() => {
@@ -479,7 +479,7 @@ function Publications() {
               </Card.Text>
               </Card> : null}
             </Col>
-            <Col xs={4}>
+            <Col xs={12} md={4}>
               {
                 publication.teaser_url ?
                   <img src={publication.teaser_url} alt={publication.teaser_url} className='teaser'/>
