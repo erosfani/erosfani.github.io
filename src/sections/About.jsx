@@ -19,7 +19,7 @@ const About = () => {
 
       </Row>
       <Row>
-        <Col xs={4}>
+        <Col xs={12} md={4}>
           <img src={profile} alt="Profile" className='profile'/>
           <Container className="mb-lg-2" fluid>
             <Button size='lg' className='about-button' onClick={() =>
@@ -46,12 +46,12 @@ const About = () => {
           </Badge>
 
         </Col>
-        <Col xs={7}>
-          <Card className='p-lg-5 mb-5 about'>
+        <Col xs={12} md={8}>
+          <Card className='p-3 p-lg-5 mb-5 about'>
 
             <CardGroup> <h2> About me </h2> </CardGroup>
 
-            <Card.Footer style={{textAlign: 'left', backgroundColor: 'white', marginBottom: '1em', paddingTop: '1em'}}>
+            <Card.Footer className="about-description">
 
               <p>
                 I am a <strong> Ph.D. candidate </strong>
