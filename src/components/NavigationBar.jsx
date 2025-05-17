@@ -5,7 +5,7 @@ function NavigationBar(props) {
 
   return (
 
-    <Navbar className='navbar navbar-expand-sm navbar-light bg-light fixed-top'>
+    <Navbar expand="sm" bg="light" variant="light" fixed="top">
 
       <Container className='mx-auto'>
 
@@ -23,6 +23,7 @@ function NavigationBar(props) {
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
 
         <Navbar.Collapse id="basic-navbar-nav">
+
           <Nav className="me-auto">
             <Nav.Link href="#experience" active=""
                       className={props.activeSection === 'experience' ? 'active_tab' : undefined}>
