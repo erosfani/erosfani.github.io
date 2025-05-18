@@ -6,9 +6,10 @@ import Web from "../components/icons/Web.jsx";
 
 import React, { useState } from 'react';
 import CiteWindow from "../components/CiteWindow.jsx";
+import NewPage from "../components/icons/NewPage.jsx";
 
 
-function Publications() {
+function Research() {
 
   const publications = [
     {
@@ -413,22 +414,81 @@ function Publications() {
       teaser_url: "assets/teasers/feddrive.png",
       description: "FedDrive is the first benchmark to address Semantic Segmentation in Federated Learning for autonomous driving, introducing three settings and two datasets with real-world challenges like heterogeneity and domain shifts. It highlights the importance of handling batch normalization statistics correctly and shows that style transfer improves generalization under domain shift."
     },
+  ]
 
+  const reviewer_conferences = [
+    {
+      acronym: "NeurIPS",
+      name: "Conference on Neural Information Processing Systems",
+      years: ["2025", "2024"],
+    },
+    {
+      acronym: "ECAI",
+      name: "European Conference on Artificial Intelligence",
+      years: ["2025", ],
+      pc: "https://ecai2025.org/program-committee/",
+    },
+    {
+      acronym: "CVPR",
+      name: "IEEE/CVF Computer Vision and Pattern Recognition Conference",
+      years: ["2025", ],
+    },
+    {
+      acronym: "TMLR",
+      name: "Transactions on Machine Learning Research",
+      years: ["2024", ],
+    },
+    {
+      acronym: "ECCV",
+      name: "European Conference on Computer Vision",
+      years: ["2024", ],
+      outstanding: "public/certificate_outstanding_reviewer_ECCV24.pdf",
+    },
+    {
+      acronym: "ICDL",
+      name: "IEEE International Conference on Development and Learning",
+      years: ["2023", ],
+    },
+    {
+      acronym: "ECML-PKDD",
+      name: "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+      years: ["2023", ],
+    },
+    {
+      acronym: "ICRA",
+      name: "IEEE International Conference on Robotics and Automation",
+      years: ["2023", ],
+    },
+    {
+      acronym: "L2ID-ECCV",
+      name: "Learning from Limited and Imperfect Data workshop of the European Conference on Computer Vision",
+      years: ["2022", ],
+    },
+    {
+      acronym: "RA-L",
+      name: "IEEE Robotics and Automation Letters",
+      years: ["2022", ],
+    },
   ]
 
   const [show, setShow] = useState(false);
   const [cite, setCite] = useState({});
 
   return (
-    <Container fluid id="publications" className="section publications-section">
+    <Container fluid id="research" className="section research-section">
       <Row>
         <Col xs={12} className='section-title'>
-          <h1> Publications </h1>
+          <h1> Research </h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} className='section-subtitle'>
+          <h2> Publications </h2>
         </Col>
       </Row>
       {
         publications.map((publication, index) => (
-          <Row key={index} className="publication" style={index === 0 ? {borderTop: "2px solid #00000019"} : null}>
+          <Row key={index} className="publication">
             <Col xs={12} md={8} className='publication-description'>
               <h5>
                 {
@@ -490,9 +550,62 @@ function Publications() {
         ))
       }
       <span className='section-footnote'> *equal contribution. </span>
+
+      <Row>
+        <Col xs={12} className='section-subtitle' style={{marginTop: '15px'}}>
+          <h2> Peer reviewing </h2>
+        </Col>
+      </Row>
+
+      {reviewer_conferences.map((conference, index) => (
+        <Row key={index} className={"review-row"}>
+          <Col xs={8} className='review'>
+            <ul className="review-list">
+              <li>
+                {conference.name} (<strong>{conference.acronym}</strong>)
+                {conference.pc ?
+                  <>
+                    <br/>
+                    <span className='review-pc'>
+                      Invited as <strong>Program Committee Member</strong>
+                      <Button className='new-page-button' onClick={() =>
+                        window.open(conference.pc, '_blank')}>
+                          <NewPage />
+                        </Button>
+                    </span>
+                  </>
+                  : null
+                }
+                {conference.outstanding ?
+                  <>
+                    <br/>
+                    <span className='review-pc'>
+                      Awarded as <strong>Outstanding </strong>
+                      <span className='bind review-pc'>
+                        <strong>Reviewer</strong>
+                        <Button className='new-page-button' onClick={() =>
+                        window.open(conference.outstanding, '_blank')}>
+                          <NewPage />
+                        </Button>
+                      </span>
+                    </span>
+                  </>
+                  : null
+                }
+              </li>
+            </ul>
+          </Col>
+          <Col xs={4} className='review-date'>
+            🗓️ {conference.years.map((year, cindex) => (
+            <span key={cindex}>{year}{cindex !== conference.years.length - 1 ? <>, </> : null}</span>
+          ))}
+          </Col>
+        </Row>
+      ))}
+
     </Container>
   );
 }
 
 
-export default Publications;
+export default Research;

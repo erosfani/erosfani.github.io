@@ -5,7 +5,7 @@ import About from "./sections/About.jsx";
 import {useState, useEffect} from "react";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
-import Publications from "./sections/Publications.jsx";
+import Research from "./sections/Research.jsx";
 import LastUpdateDate from "./components/LastUpdateDate.jsx";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
 
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'education', 'publications'];
+      const sections = ['about', 'experience', 'education', 'research'];
       let current = '';
 
       sections.forEach(id => {
@@ -42,7 +42,7 @@ function App() {
         <About />
         <Experience />
         <Education />
-        <Publications />
+        <Research />
       </main>
 
       <footer className="footer">

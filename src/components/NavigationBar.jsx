@@ -40,10 +40,10 @@ function NavigationBar(props) {
                       onClick={() => setExpanded(false)}>
               Education
             </Nav.Link>
-            <Nav.Link href="#publications" active=""
-                      className={props.activeSection === 'publications' ? 'active_tab' : undefined}
+            <Nav.Link href="#research" active=""
+                      className={props.activeSection === 'research' ? 'active_tab' : undefined}
                       onClick={() => setExpanded(false)}>
-              Publications
+              Research
             </Nav.Link>
           </Nav>
 
