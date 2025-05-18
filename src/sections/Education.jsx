@@ -1,9 +1,12 @@
-import {Card, Col, Container, Row} from "react-bootstrap";
+import {Button, Card, Col, Container, Row} from "react-bootstrap";
 import getWindowWidth from "../components/getWindowWidth.jsx";
+import NewPage from "../components/icons/NewPage.jsx";
+import React from "react";
 
 function Education() {
 
   const educations = [
+
     {
       course: 'Ph.D. candidate in Computer and Control Engineering',
       org: 'Polytechnic University of Turin',
@@ -78,10 +81,35 @@ function Education() {
 
   ]
 
+  const courses = [
+
+    {
+      title: 'Fundamentals of Reinforcement Learning',
+      organizer: 'Coursera, University of Alberta',
+      date: 'Feb 2022',
+      certificate: 'https://www.coursera.org/account/accomplishments/verify/E8XHQC8Y5GD4',
+    },
+
+    {
+      title: 'Sample-based Learning Methods',
+      organizer: 'Coursera, University of Alberta',
+      date: 'Jan 2022',
+      certificate: 'https://www.coursera.org/account/accomplishments/verify/A983W59KX3JY',
+    },
+
+    {
+      title: 'Security Soft Start',
+      organizer: 'ONstairs Academy',
+      date: 'Jun 2020',
+      certificate: 'certificate_security_soft_start.pdf',
+    },
+
+  ]
+
   const width = getWindowWidth();
 
   return (
-    <Container fluid id="education" className="section">
+    <Container fluid id="education" className="section" style={{paddingBottom: '15px'}}>
       <Row>
         <Col xs={12} className='section-title'>
           <h1> Education </h1>
@@ -138,6 +166,26 @@ function Education() {
           </Col>
         </Row>))
       }
+      <Row>
+        <Col xs={12} className='section-subtitle' style={{marginBottom: '10px'}}>
+          <h2> Additional courses </h2>
+        </Col>
+      </Row>
+      {courses.map((course, index) => (
+        <Row key={index} className={"review-row certificate"}>
+          <Col xs={8} className='review'>
+            <h4> {course.title} </h4>
+            {course.organizer}
+            <Button className='new-page-button' onClick={() =>
+              window.open(course.certificate, '_blank')}>
+              <NewPage />
+            </Button>
+          </Col>
+          <Col xs={4} className='review-date'>
+            🗓️ <span>{course.date}</span>
+          </Col>
+        </Row>
+      ))}
     </Container>
   );
 }
