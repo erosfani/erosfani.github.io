@@ -41,8 +41,8 @@ const About = () => {
           </Container>
 
           <Badge className='contacts' bg=''>
-            <a href='mailto:eros.fani@polito.it'> eros.fani@polito.it </a>
             <a href='mailto:efani@bcamath.org'> efani@bcamath.org </a>
+            <a href='mailto:eros.fani@polito.it'> eros.fani@polito.it </a>
           </Badge>
 
         </Col>
@@ -54,22 +54,58 @@ const About = () => {
             <Card.Footer className="about-description">
 
               <p>
-                I am a <strong> Ph.D. candidate </strong>
-                at the Visual and Multimodal Applied Learning Laboratory
-                within the Artificial Intelligence Hub
-                at the <strong> Polytechnic University of Turin</strong>, in the
-                European Laboratory fo Learning and Intelligent Systems (<strong>ELLIS</strong>)
-                <strong> Ph.D. program</strong>.
 
-                Additionally, I am a <strong> Research Fellow </strong>
-                at the <strong> Basque Center for Applied Mathematics</strong>,
-                and a <strong> Senior Researcher </strong>
-                of the Predictive Analytics Lab
-                at the <strong> University of Sussex</strong>.
+                I am a
+                <span onClick={() =>
+                  window.open('https://www.bcamath.org/en/people/bcam-members/efani', '_blank')}>
+                  <> <span className='highlight'>
+                    <strong> Research Fellow </strong>
+                    at the <strong> Basque Center for Applied Mathematics</strong>
+                  </span></>
+                </span>,
+                and a
+                <span onClick={() =>
+                  window.open('https://wearepal.ai/team', '_blank')}>
+                  <> <span className='highlight'>
+                    <strong> Senior Researcher </strong>
+                    of the Predictive Analytics Lab
+                    at the <strong> University of Sussex</strong>
+                  </span></>
+                </span>.
+
+                Additionally, I am completing a <strong> Ph.D. in Artificial Intelligence </strong>
+                at the
+                <span onClick={() =>
+                  window.open('https://vandal.polito.it/index.php/people/', '_blank')}>
+                  <> <span className='highlight'>
+                    Visual and Multimodal Applied Learning Laboratory
+                  </span> </>
+                </span>
+                within the Artificial Intelligence Hub
+                at the
+                <span onClick={() =>
+                  window.open('https://www.polito.it/en/staff?p=eros.fani', '_blank')}>
+                  <> <span className='highlight'>
+                    <strong> Polytechnic University of Turin</strong>
+                  </span> </>
+                </span>
+                (thesis title:
+                <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>).
+
+                My Ph.D. is conducted within the framework of the
+                <span onClick={() =>
+                  window.open('https://ellis.eu/phd-postdoc', '_blank')}>
+                  <> <span className='highlight'>
+                    European Laboratory for Learning and Intelligent Systems (<strong>ELLIS</strong>)
+                    <strong> Ph.D. program</strong>
+                  </span></>
+                </span>,
+                a pan-European initiative for excellence in machine learning and AI.
+
               </p>
 
               <p>
-                I have had the opportunity to publish and present my papers at several international peer-reviewed
+                I have published and presented my work at several international peer-reviewed
                 conferences and workshops, including
                 <strong> ICML</strong>,
                 <strong> NeurIPS</strong>,
@@ -77,18 +113,24 @@ const About = () => {
                 <strong> IROS</strong>,
                 and <strong> WACV</strong>, and to an <strong> IEEE </strong> journal.
                 Furthermore, I have served as a reviewer for various international conferences and journals,
-                and I was recently honored as an <strong> Outstanding Reviewer </strong>
+                and I was recently honored as an
+                <strong onClick={() =>
+                  window.open('certificate_outstanding_reviewer_ECCV24.pdf', '_blank')}>
+                  <> <span className='highlight'>Outstanding Reviewer</span> </>
+                </strong>
                 at <strong> ECCV </strong> in 2024.
               </p>
 
               <p>
-                My research focuses on <strong> Heterogeneity in Federated Learning </strong>
-                for real-world vision applications. I also have expertise with
-                <strong> Large Language Models </strong>
-                and in <strong> Semantic Segmentation</strong>,
+                My research focuses on addressing the challenge of <strong> Data Heterogeneity </strong>
+                in real-world applications of <strong> Federated Learning</strong>.
+                Additionally, I possess a solid track record in
+                <strong> Semantic Segmentation</strong>,
                 <strong> Domain Adaptation</strong>,
                 <strong> Domain Generalization</strong>,
-                and <strong> Semi-Supervised Learning</strong>.
+                <strong> Semi-Supervised Learning</strong>,
+                and in designing innovative solutions for ML problems using
+                <strong> Large Language Models</strong>.
               </p>
 
             </Card.Footer>
@@ -104,6 +146,11 @@ const About = () => {
                   <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' /> </span>
                 </li>
 
+                <li>
+                  University of Sussex, Predictive Analytics <span className="bind"> Lab
+                  <NewPageButton url='https://wearepal.ai/team' /> </span>
+                </li>
+
                 <li> Polytechnic University of Turin (PoliTo):</li>
                 <ul>
                   <li>
@@ -116,11 +163,6 @@ const About = () => {
                     <NewPageButton url='https://vandal.polito.it/index.php/people/' /> </span>
                   </li>
                 </ul>
-
-                <li>
-                  University of Sussex, Predictive Analytics <span className="bind"> Lab
-                  <NewPageButton url='https://wearepal.ai/team' /> </span>
-                </li>
 
                 <li>
                   European Laboratory for Learning and Intelligent Systems <span className="bind"> (ELLIS)
