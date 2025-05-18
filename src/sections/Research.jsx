@@ -442,7 +442,7 @@ function Research() {
       acronym: "ECCV",
       name: "European Conference on Computer Vision",
       years: ["2024", ],
-      outstanding: "public/certificate_outstanding_reviewer_ECCV24.pdf",
+      outstanding: "certificate_outstanding_reviewer_ECCV24.pdf",
     },
     {
       acronym: "ICDL",
