@@ -567,11 +567,12 @@ function Research() {
                   <>
                     <br/>
                     <span className='review-pc'>
-                      Invited as <strong>Program Committee Member</strong>
+                      Invited as <strong>Program Committee </strong>
+                      <span className='bind review-pc'> <strong> Member</strong>
                       <Button className='new-page-button' onClick={() =>
                         window.open(conference.pc, '_blank')}>
                           <NewPage />
-                        </Button>
+                        </Button></span>
                     </span>
                   </>
                   : null
