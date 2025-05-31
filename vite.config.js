@@ -12,10 +12,6 @@ export default defineConfig({
           src: 'src/assets/teasers/*',
           dest: 'assets/teasers',
         },
-        {
-          src: 'empty.html',
-          dest: '.',
-        },
       ],
     }),
   ],
