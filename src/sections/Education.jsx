@@ -65,7 +65,7 @@ function Education() {
       org: 'Polytechnic University of Turin, CRT Foundation',
       date: 'Oct 2016 - Jul 2019',
       location: 'Turin, Italy',
-      description: 'Study program of excellence open only to the 2% top-tier students admitted to the PoliTO for the ' +
+      description: 'Study program of excellence open only to the 2% top-tier students admitted to the PoliTo for the ' +
         'A.Y. 2016/17',
       color: '#098a04',
       color_from: '#5ec85c',
@@ -84,6 +84,13 @@ function Education() {
   const courses = [
 
     {
+      title: 'Warm up your muscles: A ten-stage marathon to become the protagonist of your financial future',
+      organizer: 'Museo del Risparmio, Intesa San Paolo',
+      date: 'Feb 2025 - Apr 2025',
+      certificate: 'certificate_warm_up_you_muscles_ten-stage_marathon_to_become_the_protagonist_of_your_financial_future.pdf'
+    },
+
+    {
       title: 'Fundamentals of Reinforcement Learning',
       organizer: 'Coursera, University of Alberta',
       date: 'Feb 2022',
@@ -95,6 +102,13 @@ function Education() {
       organizer: 'Coursera, University of Alberta',
       date: 'Jan 2022',
       certificate: 'https://www.coursera.org/account/accomplishments/verify/A983W59KX3JY',
+    },
+
+    {
+      title: 'Vodafone IoT Academy',
+      organizer: 'Vodafone, Polytechnic University of Turin',
+      date: 'Jan 2020 - Jul 2020',
+      description: 'University-wide selection of the best 30 applicants at PoliTo'
     },
 
     {
@@ -176,10 +190,11 @@ function Education() {
           <Col xs={8} className='review'>
             <h4> {course.title} </h4>
             {course.organizer}
-            <Button className='new-page-button' onClick={() =>
+            {course.certificate ? <Button className='new-page-button' onClick={() =>
               window.open(course.certificate, '_blank')}>
               <NewPage />
-            </Button>
+            </Button> : null}
+            {course.description ? <><br/> <strong> {course.description} </strong> </> : null}
           </Col>
           <Col xs={4} className='review-date'>
             🗓️ <span>{course.date}</span>
