@@ -105,17 +105,36 @@ function Education() {
     },
 
     {
-      title: 'Vodafone IoT Academy',
-      organizer: 'Vodafone, Polytechnic University of Turin',
-      date: 'Jan 2020 - Jul 2020',
-      description: 'University-wide selection of the best 30 applicants at PoliTo'
-    },
-
-    {
       title: 'Security Soft Start',
       organizer: 'ONstairs Academy',
       date: 'Jun 2020',
       certificate: 'certificate_security_soft_start.pdf',
+    },
+
+  ]
+
+  const schools = [
+
+    {
+      title: 'Mediterranean Machine Learning (M2L) Summer School',
+      organizer: 'AI Education Foundation',
+      position: 'Thessaloniki, Greece',
+      date: 'Aug 2023',
+    },
+
+    {
+      title: 'ELLIS Doctoral Symposium 2021',
+      organizer: 'University of Tübingen, Max-Plank Institute for Intelligent Systems',
+      position: 'Tübingen, Germany',
+      date: 'Oct 2021',
+    },
+
+    {
+      title: 'Vodafone IoT Academy',
+      organizer: 'Vodafone, Polytechnic University of Turin',
+      position: 'Turin, Italy',
+      date: 'Jan 2020 - Jul 2020',
+      description: 'University-wide selection of the best 30 applicants at PoliTo'
     },
 
   ]
@@ -180,6 +199,7 @@ function Education() {
           </Col>
         </Row>))
       }
+
       <Row>
         <Col xs={12} className='section-subtitle' style={{marginBottom: '10px'}}>
           <h2> Additional courses </h2>
@@ -198,6 +218,30 @@ function Education() {
           </Col>
           <Col xs={4} className='review-date'>
             🗓️ <span>{course.date}</span>
+          </Col>
+        </Row>
+      ))}
+
+      <Row>
+        <Col xs={12} className='section-subtitle' style={{marginBottom: '10px', marginTop: '10px'}}>
+          <h2> Main attended schools and programs </h2>
+        </Col>
+      </Row>
+      {schools.map((school, index) => (
+        <Row key={index} className={"review-row certificate"}>
+          <Col xs={8} className='review'>
+            <h4> {school.title} </h4>
+            {school.organizer}
+            {school.certificate ? <Button className='new-page-button' onClick={() =>
+              window.open(school.certificate, '_blank')}>
+              <NewPage />
+            </Button> : null}
+            {school.description ? <><br/> <strong> {school.description} </strong> </> : null}
+          </Col>
+          <Col xs={4} className='review-date'>
+            📍 <span>{school.position}</span>
+            <br/>
+            🗓️ <span>{school.date}</span>
           </Col>
         </Row>
       ))}
