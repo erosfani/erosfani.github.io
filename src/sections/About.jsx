@@ -92,7 +92,7 @@ const About = () => {
                 <span className="date">05/2025:</span>
                 <span className="content">Our new paper
                   <strong> “Interaction-Aware Gaussian Weighting for Clustered Federated Learning” </strong>
-                  is accepted at <strong>ICML25</strong>!</span>
+                  has been accepted at <strong>ICML25</strong>!</span>
               </li>
               <li>
                 <span className="date">03/2025:</span>
