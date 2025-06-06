@@ -5,8 +5,36 @@ import Scholar from "../components/logos/Scholar.jsx";
 import Github from "../components/logos/Github.jsx";
 import LinkedIn from "../components/logos/LinkedIn.jsx";
 import NewPageButton from "../components/NewPageButton.jsx";
+import {useEffect, useRef, useState} from "react";
 
 const About = () => {
+
+  const [maxHeight, setMaxHeight] = useState(undefined);
+  const newsRef = useRef(null);
+  const aboutMeRef = useRef(null);
+
+  useEffect(() => {
+    const updateMaxHeight = () => {
+      if (newsRef.current && aboutMeRef.current) {
+        const newsRect = newsRef.current.getBoundingClientRect();
+        const aboutRect = aboutMeRef.current.getBoundingClientRect();
+
+        const maxHeightPx = aboutRect.bottom - newsRect.top;
+
+        setMaxHeight(maxHeightPx > 0 ? maxHeightPx : 0);
+      }
+    };
+
+    updateMaxHeight();
+    window.addEventListener('resize', updateMaxHeight);
+    window.addEventListener('scroll', updateMaxHeight, true);
+
+    return () => {
+      window.removeEventListener('resize', updateMaxHeight);
+      window.removeEventListener('scroll', updateMaxHeight, true);
+    };
+  }, []);
+
 
   return (
     <Container fluid id="about" className='section'>
@@ -45,11 +73,47 @@ const About = () => {
             <a href='mailto:eros.fani@polito.it'> eros.fani@polito.it </a>
           </Badge>
 
+          <Container
+            className="news"
+            ref={newsRef}
+            style={{
+              overflowY: 'auto',
+              maxHeight: maxHeight ? `${maxHeight}px` : undefined,
+            }}
+            fluid
+          >
+            <h3> News </h3>
+            <ul className="news-list">
+              <li>
+                <span className="date">06/2025:</span>
+                <span className="content">I will be attending <strong>ICML25 @ Vancouver</strong>! See you there!</span>
+              </li>
+              <li>
+                <span className="date">05/2025:</span>
+                <span className="content">Our new paper
+                  <strong> “Interaction-Aware Gaussian Weighting for Clustered Federated Learning” </strong>
+                  is accepted at <strong>ICML25</strong>!</span>
+              </li>
+              <li>
+                <span className="date">03/2025:</span>
+                <span className="content">Check out our new paper, <strong>“Resource-Efficient Personalization in
+                  Federated Learning with Closed-Form Classifiers”</strong>, accepted at IEEE Access!</span>
+              </li>
+              <li>
+                <span className="date">11/2024:</span>
+                <span className="content">I am happy to share that I am starting a new position as a
+                  <strong> Research Fellow Software Engineer</strong> at the
+                  <strong> Basque Center for Applied Mathematics (BCAM)</strong>! </span>
+              </li>
+
+            </ul>
+          </Container>
+
         </Col>
         <Col xs={12} md={8}>
-          <Card className='p-3 p-lg-5 mb-5 about'>
+          <Card ref={aboutMeRef} className='p-3 p-lg-5 mb-5 about'>
 
-            <CardGroup> <h2> About me </h2> </CardGroup>
+            <CardGroup><h2> About me </h2></CardGroup>
 
             <Card.Footer className="about-description">
 
