@@ -3,6 +3,7 @@ import Cite from "../components/icons/Cite.jsx";
 import Read from "../components/icons/Read.jsx";
 import GithubSmall from "../components/logos/GithubSmall.jsx";
 import Web from "../components/icons/Web.jsx";
+import getWindowWidth from "../components/getWindowWidth.jsx";
 
 import React, { useState } from 'react';
 import CiteWindow from "../components/CiteWindow.jsx";
@@ -473,6 +474,7 @@ function Research() {
 
   const [show, setShow] = useState(false);
   const [cite, setCite] = useState({});
+  const width = getWindowWidth();
 
   return (
     <Container fluid id="research" className="section research-section">
@@ -559,7 +561,7 @@ function Research() {
 
       {reviewer_conferences.map((conference, index) => (
         <Row key={index} className={"review-row"}>
-          <Col xs={8} className='review'>
+          <Col xs={width < 576 ? 12 : 8} className='review'>
             <ul className="review-list">
               <li>
                 {conference.name} (<strong>{conference.acronym}</strong>)
@@ -596,7 +598,7 @@ function Research() {
               </li>
             </ul>
           </Col>
-          <Col xs={4} className='review-date'>
+          <Col xs={width < 576 ? 12 : 4} className='review-date'>
             🗓️ {conference.years.map((year, cindex) => (
             <span key={cindex}>{year}{cindex !== conference.years.length - 1 ? <>, </> : null}</span>
           ))}

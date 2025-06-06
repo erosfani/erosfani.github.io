@@ -207,7 +207,7 @@ function Education() {
       </Row>
       {courses.map((course, index) => (
         <Row key={index} className={"review-row certificate"}>
-          <Col xs={8} className='review'>
+          <Col xs={width < 576 ? 12 : 8} className='review'>
             <h4> {course.title} </h4>
             {course.organizer}
             {course.certificate ? <Button className='new-page-button' onClick={() =>
@@ -216,7 +216,7 @@ function Education() {
             </Button> : null}
             {course.description ? <><br/> <strong> {course.description} </strong> </> : null}
           </Col>
-          <Col xs={4} className='review-date'>
+          <Col xs={width < 576 ? 12 : 4}>
             🗓️ <span>{course.date}</span>
           </Col>
         </Row>
@@ -229,7 +229,7 @@ function Education() {
       </Row>
       {schools.map((school, index) => (
         <Row key={index} className={"review-row certificate"}>
-          <Col xs={8} className='review'>
+          <Col xs={width < 576 ? 12 : 8} className='review'>
             <h4> {school.title} </h4>
             {school.organizer}
             {school.certificate ? <Button className='new-page-button' onClick={() =>
@@ -238,7 +238,7 @@ function Education() {
             </Button> : null}
             {school.description ? <><br/> <strong> {school.description} </strong> </> : null}
           </Col>
-          <Col xs={4} className='review-date'>
+          <Col xs={width < 576 ? 12 : 4}>
             📍 <span>{school.position}</span>
             <br/>
             🗓️ <span>{school.date}</span>

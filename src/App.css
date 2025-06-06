@@ -104,6 +104,13 @@ main > div:nth-child(even) {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 576px) {
+  .section {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
 .profile {
   width: 80%;
   border-radius: 50%;
@@ -283,6 +290,12 @@ main > div:nth-child(even) {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 576px) {
+  .timeline-card {
+    margin-bottom: 10px;
+  }
+}
+
 .timeline-card .card-body {
   padding: 0;
 }
@@ -300,6 +313,13 @@ main > div:nth-child(even) {
   width: 50%;
   align-content: center;
   margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .timeline-date-loc {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .research-section {
@@ -354,6 +374,7 @@ main > div:nth-child(even) {
 
 .review-row {
   align-items: center;
+  padding: 10px;
 }
 
 .review-row:hover {
@@ -385,10 +406,6 @@ main > div:nth-child(even) {
   font-weight: bold;
 }
 
-.review-date {
-
-}
-
 .review-pc {
   text-align: left;
   text-decoration: underline;
@@ -398,6 +415,13 @@ main > div:nth-child(even) {
   color: #ff8000;
 }
 
+@media screen and (max-width: 576px) {
+  .review-date {
+    text-align: left;
+    margin-left: 28px;
+  }
+}
+
 .certificate {
   background: #ffffff;
   border: 2px solid #00000019;
@@ -405,6 +429,13 @@ main > div:nth-child(even) {
   margin: 1em;
   padding-left: 15px;
   padding-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .certificate {
+    margin: 0 0 10px;
+    text-align: left;
+  }
 }
 
 .footer {
