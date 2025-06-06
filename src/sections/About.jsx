@@ -97,7 +97,8 @@ const About = () => {
               <li>
                 <span className="date">03/2025:</span>
                 <span className="content">Check out our new paper, <strong>“Resource-Efficient Personalization in
-                  Federated Learning with Closed-Form Classifiers”</strong>, accepted at IEEE Access!</span>
+                  Federated Learning with Closed-Form Classifiers”</strong>, accepted at
+                  <strong> IEEE Access</strong>!</span>
               </li>
               <li>
                 <span className="date">11/2024:</span>
