@@ -65,45 +65,6 @@ function Research() {
     },
 
     {
-      title: "Resource-Efficient Personalization in Federated Learning With Closed-Form Classifiers",
-      authors: [
-        {
-          name: "Eros",
-          surname: "Fanì",
-        },
-        {
-          name: "Raffaello",
-          surname: "Camoriano",
-        },
-        {
-          name: "Barbara",
-          surname: "Caputo",
-        },
-        {
-          name: "Marco",
-          surname: "Ciccone",
-        }
-      ],
-      venue: "IEEE Access",
-      date: 2025,
-      link: "https://ieeexplore.ieee.org/abstract/document/10946159",
-      cite: {
-        text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2025). Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers. IEEE Access.",
-        bibtex: "@article{fani2025resource,\n" +
-          "  title={Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers},\n" +
-          "  author=Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
-          "  journal={IEEE Access},\n" +
-          "  year={2025},\n" +
-          "  publisher={IEEE}\n" +
-          "}"
-      },
-      website: "https://fed-3r.github.io/",
-      code: "https://github.com/Erosinho13/Fed3R",
-      teaser_url: "assets/teasers/fed3r_access.png",
-      description: "Statistical heterogeneity in Federated Learning causes client drift, especially in classification layers. Fed3R solves this problem by constructing a closed-form ridge classifier immune to statistical heterogeneity which can also serve as a strong initialization for FL/Personalized FL methods. Additionally, OLL simplifies local classifiers by focusing on local classes, improving efficiency and accuracy."
-    },
-
-    {
       title: "Interaction-Aware Gaussian Weighting for Clustered Federated Learning",
       authors: [
         {
@@ -143,6 +104,45 @@ function Research() {
       code: "",
       teaser_url: "assets/teasers/fedgwc.png",
       description: "Conventional Federated Learning struggles with data heterogeneity and class imbalance. FedGWC, a new clustered FL method, groups clients using a Gaussian reward-based interaction method to enhance personalization and robustness. A novel clustering metric, the Wasserstein Adjusted Score, evaluates cluster cohesion. Experiments show that FedGWC improves both cluster quality and accuracy over existing methods."
+    },
+
+    {
+      title: "Resource-Efficient Personalization in Federated Learning With Closed-Form Classifiers",
+      authors: [
+        {
+          name: "Eros",
+          surname: "Fanì",
+        },
+        {
+          name: "Raffaello",
+          surname: "Camoriano",
+        },
+        {
+          name: "Barbara",
+          surname: "Caputo",
+        },
+        {
+          name: "Marco",
+          surname: "Ciccone",
+        }
+      ],
+      venue: "IEEE Access",
+      date: 2025,
+      link: "https://ieeexplore.ieee.org/abstract/document/10946159",
+      cite: {
+        text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2025). Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers. IEEE Access.",
+        bibtex: "@article{fani2025resource,\n" +
+          "  title={Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers},\n" +
+          "  author=Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
+          "  journal={IEEE Access},\n" +
+          "  year={2025},\n" +
+          "  publisher={IEEE}\n" +
+          "}"
+      },
+      website: "https://fed-3r.github.io/",
+      code: "https://github.com/Erosinho13/Fed3R",
+      teaser_url: "assets/teasers/fed3r_access.png",
+      description: "Statistical heterogeneity in Federated Learning causes client drift, especially in classification layers. Fed3R solves this problem by constructing a closed-form ridge classifier immune to statistical heterogeneity which can also serve as a strong initialization for FL/Personalized FL methods. Additionally, OLL simplifies local classifiers by focusing on local classes, improving efficiency and accuracy."
     },
 
     {

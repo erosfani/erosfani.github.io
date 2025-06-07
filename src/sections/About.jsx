@@ -91,13 +91,25 @@ const About = () => {
               <li>
                 <span className="date">05/2025:</span>
                 <span className="content">Our new paper
-                  <strong> “Interaction-Aware Gaussian Weighting for Clustered Federated Learning” </strong>
+                  “<span onClick={() =>
+                    window.open('https://arxiv.org/pdf/2502.03340', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>Interaction-Aware Gaussian Weighting for Clustered Federated Learning</strong>
+                  </span></>
+                </span>”
                   has been accepted at <strong>ICML25</strong>!</span>
               </li>
               <li>
                 <span className="date">03/2025:</span>
-                <span className="content">Check out our new paper, <strong>“Resource-Efficient Personalization in
-                  Federated Learning with Closed-Form Classifiers”</strong>, accepted at
+                <span className="content">Check out our new paper,
+                  “<span onClick={() =>
+                    window.open('https://ieeexplore.ieee.org/abstract/document/10946159', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>Resource-Efficient Personalization in
+                      Federated Learning with Closed-Form Classifiers</strong>
+                  </span></>”
+                </span>
+                  , accepted at
                   <strong> IEEE Access</strong>!</span>
               </li>
               <li>
