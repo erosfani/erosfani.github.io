@@ -120,6 +120,7 @@ function Education() {
       organizer: 'AI Education Foundation',
       position: 'Thessaloniki, Greece',
       date: 'Aug 2023',
+      description: 'Selected as one of the top 10 students among 805 applicants (top 1.25%) and 180 participants (top 5.55%)',
     },
 
     {

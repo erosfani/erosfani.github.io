@@ -164,6 +164,8 @@ main > div:nth-child(even) {
   width: 80px;
   font-weight: bold;
   flex-shrink: 0;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .news-list .content {

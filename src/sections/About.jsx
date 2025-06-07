@@ -118,6 +118,11 @@ const About = () => {
                   <strong> Research Fellow Software Engineer</strong> at the
                   <strong> Basque Center for Applied Mathematics (BCAM)</strong>! </span>
               </li>
+              <li>
+                <span className="date">09/2024:</span>
+                <span className="content">I am proud to announce that I have been awarded as
+                  <strong> Outstanding Reviewer</strong> for <strong>ECCV24</strong>! </span>
+              </li>
 
             </ul>
           </Container>
