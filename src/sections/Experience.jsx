@@ -121,6 +121,15 @@ function Experience() {
                   <Card.Text> Topic: {exp.topic} </Card.Text> : null
                 }
 
+                {exp.role === 'Research Fellow Software Engineer' && exp.org === 'Basque Center for Applied Mathematics' ?
+                  <Card.Text> Lead developer,
+                      <span onClick={() =>
+                        window.open('https://www.bcamath.org/en/research/projects/actai', '_blank')}>
+                        <span> <strong className='highlight'>Act.AI project</strong> </span>
+                      </span>
+                    (PI: Prof. N. Quadrianto)
+                  </Card.Text> : null }
+
                 {exp.courses ? exp.courses.map((course, index_c) => (
                     <span key={index_c}> {course.type} course: <strong>{course.name}</strong> <br/> </span>)) : null}
 
