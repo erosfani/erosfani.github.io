@@ -10,6 +10,10 @@ h1 strong:hover {
   color: #ff8000;
 }
 
+a {
+  color: inherit;
+}
+
 nav {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.27);
 }

@@ -144,18 +144,18 @@ const About = () => {
                     <strong> Research Fellow </strong>
                     at the <strong> Basque Center for Applied Mathematics</strong>
                   </span></>
-                </span>,
+                </span>
                 and a
                 <span onClick={() =>
                   window.open('https://wearepal.ai/team', '_blank')}>
                   <> <span className='highlight'>
                     <strong> Senior Researcher </strong>
-                    of the Predictive Analytics Lab
+                    in the Predictive Analytics Lab
                     at the <strong> University of Sussex</strong>
                   </span></>
                 </span>.
 
-                Additionally, I am completing a <strong> Ph.D. in Artificial Intelligence </strong>
+                Additionally, I am nearing the completion of a <strong> Ph.D. in Artificial Intelligence </strong>
                 at the
                 <span onClick={() =>
                   window.open('https://vandal.polito.it/index.php/people/', '_blank')}>
@@ -193,7 +193,11 @@ const About = () => {
                 <strong> NeurIPS</strong>,
                 <strong> CVPR</strong>,
                 <strong> IROS</strong>,
-                and <strong> WACV</strong>, and to an <strong> IEEE </strong> journal.
+                and <strong> WACV</strong>, and to an <strong> IEEE </strong> journal (check my publications
+                <> <a href="#research">
+                  <span className='highlight' style={{textDecoration: 'underline'}}>here</span>
+                </a></>
+                ).
                 Furthermore, I have served as a reviewer for various international conferences and journals,
                 and I was recently honored as an
                 <strong onClick={() =>
