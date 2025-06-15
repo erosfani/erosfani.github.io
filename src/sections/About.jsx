@@ -142,7 +142,7 @@ const About = () => {
                   window.open('https://www.bcamath.org/en/people/bcam-members/efani', '_blank')}>
                   <> <span className='highlight'>
                     <strong> Research Fellow </strong>
-                    at the <strong> Basque Center for Applied Mathematics</strong>
+                    at the <strong> Basque Center for Applied Mathematics </strong>
                   </span></>
                 </span>
                 and a
