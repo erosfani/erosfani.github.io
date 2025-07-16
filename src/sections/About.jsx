@@ -63,7 +63,7 @@ const About = () => {
               <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
-              window.open('cv_v202505.pdf', '_blank')}>
+              window.open('cv_v202507.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
