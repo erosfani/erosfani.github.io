@@ -85,8 +85,12 @@ const About = () => {
             <h3> News </h3>
             <ul className="news-list">
               <li>
+                <span className="date">07/2025:</span>
+                <span className="content">I am excited to announce that I successfully defended my Ph.D. on July 9!</span>
+              </li>
+              <li>
                 <span className="date">06/2025:</span>
-                <span className="content">I will be attending <strong>ICML25 @ Vancouver</strong>! See you there!</span>
+                <span className="content">I will be attending <strong>ICML25 @ Vancouver</strong>! Join our poster session at the East Exhibition Hall A-B #E-1202, at the poster session 3, on Wednesday, July 16, at 11 a.m. local time. See you there!</span>
               </li>
               <li>
                 <span className="date">05/2025:</span>
@@ -155,7 +159,7 @@ const About = () => {
                   </span></>
                 </span>.
 
-                Additionally, I am nearing the completion of a <strong> Ph.D. in Artificial Intelligence </strong>
+                Additionally, I have recently completed my <strong> Ph.D. in Artificial Intelligence </strong>
                 at the
                 <span onClick={() =>
                   window.open('https://vandal.polito.it/index.php/people/', '_blank')}>
@@ -174,7 +178,7 @@ const About = () => {
                 (thesis title:
                 <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>).
 
-                My Ph.D. is conducted within the framework of the
+                My Ph.D. was conducted within the framework of the
                 <span onClick={() =>
                   window.open('https://ellis.eu/phd-postdoc', '_blank')}>
                   <> <span className='highlight'>
