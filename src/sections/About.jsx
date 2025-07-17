@@ -86,7 +86,7 @@ const About = () => {
             <ul className="news-list">
               <li>
                 <span className="date">07/2025:</span>
-                <span className="content">I am excited to announce that I successfully defended my Ph.D. on July 9!</span>
+                <span className="content">I am excited to announce that I <strong>successfully defended my Ph.D. on July 9</strong>!</span>
               </li>
               <li>
                 <span className="date">06/2025:</span>
