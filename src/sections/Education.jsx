@@ -8,7 +8,7 @@ function Education() {
   const educations = [
 
     {
-      course: 'Ph.D. candidate in Computer and Control Engineering',
+      course: 'Ph.D. in Computer and Control Engineering',
       org: 'Polytechnic University of Turin',
       date: 'Nov 2021 - Jul 2025',
       location: 'Turin, Italy',
