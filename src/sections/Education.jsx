@@ -10,7 +10,7 @@ function Education() {
     {
       course: 'Ph.D. candidate in Computer and Control Engineering',
       org: 'Polytechnic University of Turin',
-      date: 'Nov 2021 - present',
+      date: 'Nov 2021 - Jul 2025',
       location: 'Turin, Italy',
       description: 'Advisor: Prof. B. Caputo ⋅ PoliTo',
       thesis: 'Addressing Heterogeneity in Federated Learning for Real-world Vision Applications',
@@ -19,7 +19,7 @@ function Education() {
     {
       course: 'ELLIS Ph.D. program - Academic track',
       org: 'European Laboratory for Learning and Intelligent Systems',
-      date: 'Nov 2021 - present',
+      date: 'Nov 2021 - Jul 2025',
       location: 'Turin, Italy',
       description: 'Primary Host: Prof. B. Caputo · PoliTo\n' +
         'Exchange Host: Prof. N. Quadrianto · University of Sussex',
