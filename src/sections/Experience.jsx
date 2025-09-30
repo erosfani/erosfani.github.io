@@ -5,27 +5,31 @@ function Experience() {
 
   const experiences = [
     {
-      role: 'Research Fellow Software Engineer',
+      role: 'Machine Learning Researcher',
+      org: 'Gensyn',
+      date: 'Oct 2025 - present',
+      color: '#f7d5cf',
+      color_from: '#2d99d5',
+    },
+    {
+      role: 'Postdoctoral Fellow & Software Engineer',
       org: 'Basque Center for Applied Mathematics',
-      date: 'Nov 2024 - present',
-      location: 'Bilbao, Spain',
-      color: '#ff8900',
-      color_from: '#001d93',
+      date: 'Nov 2024 - Sep 2025',
+      color: '#2295d3',
+      color_from: '#0d3652',
     },
     {
       role: 'MSc thesis supervisor',
       org: 'Polytechnic University of Turin',
       date: 'Sep 2023 - Oct 2024',
-      location: 'Turin, Italy',
       topic: 'Clustered Federated Learning',
-      color: '#001d93',
+      color: '#0d3652',
     },
     {
       role: 'Teaching assistant',
       org: 'Polytechnic University of Turin',
       date: 'A.Y. 2022/23',
-      location: 'Turin, Italy',
-      color: '#001d93',
+      color: '#0d3652',
       courses: [
         {
           type: 'Graduate',
@@ -53,16 +57,14 @@ function Experience() {
       role: 'MSc thesis supervisor',
       org: 'Polytechnic University of Turin',
       date: 'Sep 2022 - Jul 2023',
-      location: 'Turin, Italy',
       topic: 'Federated Visual Geo-Localization',
-      color: '#001d93',
+      color: '#0d3652',
     },
     {
       role: 'Teaching collaborator as an undergrad',
       org: 'Polytechnic University of Turin',
       date: 'A.Y. 2018/19',
-      location: 'Turin, Italy',
-      color: '#001d93',
+      color: '#0d3652',
       courses: [
         {
           type: 'Undergraduate',
@@ -121,7 +123,11 @@ function Experience() {
                   <Card.Text> Topic: {exp.topic} </Card.Text> : null
                 }
 
-                {exp.role === 'Research Fellow Software Engineer' && exp.org === 'Basque Center for Applied Mathematics' ?
+                {exp.role === 'Machine Learning Researcher' && exp.org === 'Gensyn' ?
+                  <Card.Text> <strong>Research topic</strong>: massively decentralized and heterogeneous distributed
+                    learning </Card.Text> : null }
+
+                {exp.role === 'Postdoctoral Fellow & Software Engineer' && exp.org === 'Basque Center for Applied Mathematics' ?
                   <Card.Text> Lead developer,
                       <span onClick={() =>
                         window.open('https://www.bcamath.org/en/research/projects/actai', '_blank')}>
@@ -135,9 +141,6 @@ function Experience() {
 
                 <span className='timeline-date-loc'>
                   🗓️ {exp.date}
-                </span>
-                <span className='timeline-date-loc'>
-                  📍 {exp.location}
                 </span>
 
 

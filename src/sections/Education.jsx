@@ -11,72 +11,65 @@ function Education() {
       course: 'Ph.D. in Computer and Control Engineering',
       org: 'Polytechnic University of Turin',
       date: 'Nov 2021 - Jul 2025',
-      location: 'Turin, Italy',
       description: 'Advisor: Prof. B. Caputo ⋅ PoliTo',
       thesis: 'Addressing Heterogeneity in Federated Learning for Real-world Vision Applications',
-      color: '#001d93',
+      color: '#0d3652',
     },
     {
       course: 'ELLIS Ph.D. program - Academic track',
       org: 'European Laboratory for Learning and Intelligent Systems',
       date: 'Nov 2021 - Jul 2025',
-      location: 'Turin, Italy',
       description: 'Primary Host: Prof. B. Caputo · PoliTo\n' +
         'Exchange Host: Prof. N. Quadrianto · University of Sussex',
-      color: '#001d93',
+      color: '#0d3652',
+      color_from: '#ffca51'
     },
     {
       course: 'Visiting period at the University of Sussex for the ELLIS Exchange',
       org: 'University of Sussex, European Laboratory for Learning and Intelligent Systems',
       date: 'May 2024 - Oct 2024',
-      location: 'Brighton, United Kingdom',
       description: 'Research Advisor: Prof. N. Quadrianto · University of Sussex',
-      color: '#001d93',
+      color: '#ffca51',
+      color_from: '#c3eb9c',
     },
     {
       course: 'Visiting period at ELLIS Alicante',
       org: 'ELLIS Alicante, European Laboratory for Learning and Intelligent Systems',
       date: 'Sep 2024',
-      location: 'Alicante, Spain',
       description: 'Research Advisor: Prof. N. Oliver · ELLIS Alicante',
-      color: '#001d93',
-      color_from: '#076744',
+      color: '#c3eb9c',
+      color_from: '#0d3652',
     },
     {
       course: 'MSc in Data Science and Engineering',
       org: 'Polytechnic University of Turin',
       date: 'Oct 2019 - Oct 2021',
-      location: 'Turin, Italy',
       grade: '110/110 cum laude',
       thesis: 'On the Challenges of Class Imbalance in Federated Learning for Semantic Segmentation',
-      color: '#076744',
-      color_from: '#098a04',
+      color: '#0d3652',
     },
     {
       course: 'BSc in Computer Engineering',
       org: 'Polytechnic University of Turin',
       date: 'Oct 2016 - Jul 2019',
-      location: 'Turin, Italy',
       grade: '108/110',
-      color: '#098a04',
+      color: '#0d3652',
     },
     {
       course: 'Young Talent Project',
       org: 'Polytechnic University of Turin, CRT Foundation',
       date: 'Oct 2016 - Jul 2019',
-      location: 'Turin, Italy',
       description: 'Study program of excellence open only to the 2% top-tier students admitted to the PoliTo for the ' +
         'A.Y. 2016/17',
-      color: '#098a04',
-      color_from: '#5ec85c',
+      color: '#0d3652',
+      color_from: '#5a7c93',
     },
     {
       course: 'High school diploma',
-      org: 'Liceo Scientifico Statale M. Curie',
+      org: 'Liceo Scientifico Statale M. Curie Giulianova',
       date: 'Sep 2011 - Jul 2016',
-      location: 'Giulianova, Italy',
       grade: '100/100 cum laude',
-      color: '#5ec85c',
+      color: '#5a7c93',
     },
 
   ]
@@ -189,9 +182,6 @@ function Education() {
 
                 <span className='timeline-date-loc'>
                   🗓️ {edu.date}
-                </span>
-                <span className='timeline-date-loc'>
-                  📍 {edu.location}
                 </span>
 
 

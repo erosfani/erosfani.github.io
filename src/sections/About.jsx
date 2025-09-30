@@ -63,7 +63,7 @@ const About = () => {
               <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
-              window.open('cv_v202507.pdf', '_blank')}>
+              window.open('cv_v202505.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
@@ -85,8 +85,30 @@ const About = () => {
             <h3> News </h3>
             <ul className="news-list">
               <li>
+                <span className="date">09/2025:</span>
+                <span className="content">I will join <span className='highlight'><strong>Gensyn</strong></span> as
+                  a <span className='highlight'><strong>Machine Learning Researcher</strong></span>.
+                  I am thrilled about this new position and look forward to starting in October!</span>
+              </li>
+              <li>
+                <span className="date">08/2025:</span>
+                <span className="content">Our paper “<span onClick={() =>
+                  window.open('https://arxiv.org/pdf/2504.11216', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models</strong>
+                  </span></>
+                </span>”
+                  has been accepted at <strong>FLTA25</strong>!</span>
+              </li>
+              <li>
                 <span className="date">07/2025:</span>
-                <span className="content">I am excited to announce that I <strong>successfully defended my Ph.D. on July 9</strong>!</span>
+                <span className="content">I am excited to announce that I <strong>successfully defended my Ph.D. on July 9</strong>!
+                  Check out my Ph.D. thesis <span onClick={() =>
+                    window.open('https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>here</strong>
+                  </span></>
+                </span>.</span>
               </li>
               <li>
                 <span className="date">06/2025:</span>
@@ -127,7 +149,6 @@ const About = () => {
                 <span className="content">I am proud to announce that I have been awarded as
                   <strong> Outstanding Reviewer</strong> for <strong>ECCV24</strong>! </span>
               </li>
-
             </ul>
           </Container>
 
@@ -141,11 +162,12 @@ const About = () => {
 
               <p>
 
-                I am a
+                I have recently joined <strong> Gensyn </strong> in the role of
+                <strong> Machine Learning Researcher</strong>. Previously, I was a
                 <span onClick={() =>
                   window.open('https://www.bcamath.org/en/people/bcam-members/efani', '_blank')}>
                   <> <span className='highlight'>
-                    <strong> Research Fellow </strong>
+                    <strong> Postdoctoral Fellow </strong>
                     at the <strong> Basque Center for Applied Mathematics </strong>
                   </span></>
                 </span>
@@ -159,7 +181,7 @@ const About = () => {
                   </span></>
                 </span>.
 
-                Additionally, I have recently completed my <strong> Ph.D. in Artificial Intelligence </strong>
+                I have earned a <strong> Ph.D. in Artificial Intelligence </strong>
                 at the
                 <span onClick={() =>
                   window.open('https://vandal.polito.it/index.php/people/', '_blank')}>
@@ -176,7 +198,13 @@ const About = () => {
                   </span> </>
                 </span>
                 (thesis title:
-                <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>).
+                <span onClick={() =>
+                  window.open('https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp', '_blank')}>
+                  <> <span className='highlight'>
+                    <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>
+                  </span></>
+                </span>
+                ).
 
                 My Ph.D. was conducted within the framework of the
                 <span onClick={() =>
@@ -202,8 +230,8 @@ const About = () => {
                   <span className='highlight' style={{textDecoration: 'underline'}}>here</span>
                 </a></>
                 ).
-                Furthermore, I have served as a reviewer for various international conferences and journals,
-                and I was recently honored as an
+                Furthermore, I have served as a reviewer for many international conferences and journals,
+                and I was honored as an
                 <strong onClick={() =>
                   window.open('certificate_outstanding_reviewer_ECCV24.pdf', '_blank')}>
                   <> <span className='highlight'>Outstanding Reviewer</span> </>
@@ -212,56 +240,66 @@ const About = () => {
               </p>
 
               <p>
-                My research focuses on addressing the challenge of <strong> Data Heterogeneity </strong>
-                in real-world applications of <strong> Federated Learning</strong>.
+                My research focuses on <strong>building scalable, distributed models</strong> over uniquely
+                <strong> decentralised and heterogeneous infrastructure</strong>, and on addressing the challenge of
+                <strong> Data Heterogeneity </strong> in real-world applications of <strong> Federated Learning</strong>.
                 Additionally, I possess a solid track record in
                 <strong> Semantic Segmentation</strong>,
                 <strong> Domain Adaptation</strong>,
                 <strong> Domain Generalization</strong>,
-                <strong> Semi-Supervised Learning</strong>,
-                and in designing innovative solutions for ML problems using
-                <strong> Large Language Models</strong>.
+                <strong> Semi-Supervised Learning</strong>.
               </p>
 
             </Card.Footer>
 
-            <CardGroup> <h4> Affiliations </h4> </CardGroup>
+            {/*<CardGroup> <h4> Affiliations </h4> </CardGroup>*/}
 
-            <Card.Footer style={{textAlign: 'left', backgroundColor: 'white'}}>
+            {/*<Card.Footer style={{textAlign: 'left', backgroundColor: 'white'}}>*/}
 
-              <ul>
+            {/*  <ul>*/}
 
-                <li>
-                  Basque Center for Applied Mathematics <span className="bind"> (BCAM)
-                  <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' /> </span>
-                </li>
+            {/*    <li>*/}
+            {/*    <span className="bind"> Gensyn*/}
+            {/*      <NewPageButton url='about:blank' /> </span>*/}
+            {/*    </li>*/}
 
-                <li>
-                  University of Sussex, Predictive Analytics <span className="bind"> Lab
-                  <NewPageButton url='https://wearepal.ai/team' /> </span>
-                </li>
+            {/*  </ul>*/}
 
-                <li> Polytechnic University of Turin (PoliTo):</li>
-                <ul>
-                  <li>
-                    Department of Control and Computer Engineering <span className="bind"> (DAUIN)
-                    <NewPageButton url='https://www.polito.it/en/staff?p=eros.fani' /> </span>
-                  </li>
-                  <li>
-                    Artificial Intelligence Hub (AIH),
-                    Visual And Multimodal Applied Learning Laboratory <span className="bind"> (VANDAL)
-                    <NewPageButton url='https://vandal.polito.it/index.php/people/' /> </span>
-                  </li>
-                </ul>
+            {/*  <CardGroup> <h5> Past affiliations </h5> </CardGroup>*/}
 
-                <li>
-                  European Laboratory for Learning and Intelligent Systems <span className="bind"> (ELLIS)
-                  <NewPageButton url='https://ellis.eu/phd-postdoc' /> </span>
-                </li>
+            {/*  <ul>*/}
 
-              </ul>
+            {/*    <li>*/}
+            {/*      Basque Center for Applied Mathematics <span className="bind"> (BCAM)*/}
+            {/*      <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' /> </span>*/}
+            {/*    </li>*/}
 
-            </Card.Footer>
+            {/*    <li>*/}
+            {/*      University of Sussex, Predictive Analytics <span className="bind"> Lab*/}
+            {/*      <NewPageButton url='https://wearepal.ai/team' /> </span>*/}
+            {/*    </li>*/}
+
+            {/*    <li> Polytechnic University of Turin (PoliTo):</li>*/}
+            {/*    <ul>*/}
+            {/*      <li>*/}
+            {/*        Department of Control and Computer Engineering <span className="bind"> (DAUIN)*/}
+            {/*        <NewPageButton url='https://www.polito.it/en/staff?p=eros.fani' /> </span>*/}
+            {/*      </li>*/}
+            {/*      <li>*/}
+            {/*        Artificial Intelligence Hub (AIH),*/}
+            {/*        Visual And Multimodal Applied Learning Laboratory <span className="bind"> (VANDAL)*/}
+            {/*        <NewPageButton url='https://vandal.polito.it/index.php/people/' /> </span>*/}
+            {/*      </li>*/}
+            {/*    </ul>*/}
+
+            {/*    <li>*/}
+            {/*      European Laboratory for Learning and Intelligent Systems <span className="bind"> (ELLIS)*/}
+            {/*      <NewPageButton url='https://ellis.eu/phd-postdoc' /> </span>*/}
+            {/*    </li>*/}
+
+            {/*  </ul>*/}
+
+            {/*</Card.Footer>*/}
 
           </Card>
 

@@ -46,15 +46,15 @@ function Research() {
           surname: "Quadrianto"
         },
       ],
-      venue: "Pre-print",
+      venue: "IEEE International Conference on Federated Learning Technologies and Applications (FLTA)",
       date: 2025,
       link: "https://arxiv.org/pdf/2504.11216",
       cite: {
-        text: "Németh, G. D., Fanì, E., Ng, Y. J., Caputo, B., Lozano, M. Á., Oliver, N., & Quadrianto, N. (2025). Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models. arXiv preprint arXiv:2504.11216.",
+        text: "Németh, G. D., Fanì, E., Ng, Y. J., Caputo, B., Lozano, M. Á., Oliver, N., & Quadrianto, N. (2025). Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models. Third IEEE International Conference on Federated Learning Technologies and Applications (FLTA).",
         bibtex: "@article{nemeth2025diversity,\n" +
           "  title={Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models},\n" +
           "  author={Németh, Gergely D and Fanì, Eros and Ng, Yeat Jeng and Caputo, Barbara and Lozano, Miguel Ángel and Oliver, Nuria and Quadrianto, Novi},\n" +
-          "  journal={arXiv preprint arXiv:2504.11216},\n" +
+          "  journal={Third IEEE International Conference on Federated Learning Technologies and Applications (FLTA)},\n" +
           "  year={2025}\n" +
           "}"
       },
@@ -62,6 +62,32 @@ function Research() {
       code: "",
       teaser_url: "assets/teasers/feddiverse.png",
       description: "Federated Learning suffers from statistical heterogeneity due to imbalanced and non-IID client data. Six metrics are introduced to quantify this issue, and seven datasets are created to reflect real-world scenarios. A new client selection method, FedDiverse, improves performance by encouraging collaboration between diverse clients with minimal overhead."
+    },
+
+    {
+      title: "Addressing Heterogeneity in Federated Learning for Real-world Vision Applications",
+      authors: [
+        {
+          name: "Eros",
+          surname: "Fanì"
+        },
+      ],
+      venue: "Ph.D. Thesis",
+      date: 2025,
+      link: "https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp",
+      cite: {
+        text: "Fanì, E. (2025). Addressing Heterogeneity in Federated Learning for Real-world Vision Applications. Ph.D. Thesis.",
+        bibtex: "@article{fani2025addressing,\n" +
+                "  title={Addressing Heterogeneity in Federated Learning for Real-world Vision Applications},\n" +
+                "  author={Fanì, Eros},\n" +
+                "  year={2025},\n" +
+                "  publisher={Politecnico di Torino}\n" +
+                "}"
+      },
+      website: "",
+      code: "",
+      teaser_url: "assets/teasers/thesis.png",
+      description: "Federated Learning faces significant challenges due to data heterogeneity in computer vision tasks. Fed3R, a ridge regression-based initialization method, OLL for personalized local classifiers, and LADD for source-free domain adaptation are introduced alongside the FedDrive benchmark to address these issues. Experiments show these approaches improve performance, robustness, scalability, and efficiency compared to existing FL methods."
     },
 
     {
@@ -424,6 +450,11 @@ function Research() {
       years: ["2025", "2024"],
     },
     {
+      acronym: "RA-L",
+      name: "IEEE Robotics and Automation Letters",
+      years: ["2025", "2022"],
+    },
+    {
       acronym: "ECAI",
       name: "European Conference on Artificial Intelligence",
       years: ["2025", ],
@@ -463,11 +494,6 @@ function Research() {
     {
       acronym: "L2ID-ECCV",
       name: "Learning from Limited and Imperfect Data workshop of the European Conference on Computer Vision",
-      years: ["2022", ],
-    },
-    {
-      acronym: "RA-L",
-      name: "IEEE Robotics and Automation Letters",
       years: ["2022", ],
     },
   ]
