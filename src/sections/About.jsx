@@ -69,8 +69,7 @@ const About = () => {
           </Container>
 
           <Badge className='contacts' bg=''>
-            <a href='mailto:efani@bcamath.org'> efani@bcamath.org </a>
-            <a href='mailto:eros.fani@polito.it'> eros.fani@polito.it </a>
+            <a href='mailto:eros@gensyn.ai'> eros@gensyn.ai </a>
           </Badge>
 
           <Container
