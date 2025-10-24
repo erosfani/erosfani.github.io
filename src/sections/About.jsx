@@ -103,7 +103,7 @@ const About = () => {
                 <span className="date">07/2025:</span>
                 <span className="content">I am excited to announce that I <strong>successfully defended my Ph.D. on July 9</strong>!
                   Check out my Ph.D. thesis <span onClick={() =>
-                    window.open('https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp', '_blank')}>
+                    window.open('phd_thesis_eros_fani.pdf', '_blank')}>
                   <><span className='highlight'>
                     <strong>here</strong>
                   </span></>

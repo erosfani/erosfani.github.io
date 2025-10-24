@@ -13,6 +13,7 @@ function Education() {
       date: 'Nov 2021 - Jul 2025',
       description: 'Advisor: Prof. B. Caputo ⋅ PoliTo',
       thesis: 'Addressing Heterogeneity in Federated Learning for Real-world Vision Applications',
+      thesis_link: 'phd_thesis_eros_fani.pdf',
       color: '#0d3652',
     },
     {
@@ -177,7 +178,11 @@ function Education() {
                 <Card.Text>
                   {edu.grade ? <>Final grade: <strong>{edu.grade}</strong></> : null}
                   {edu.grade && edu.thesis ? <br/> : null}
-                  {edu.thesis ? <>Thesis title: <strong>{edu.thesis}</strong></> : null}
+                  {edu.thesis ? <>Thesis title: { edu.thesis_link ?
+                    <span className='highlight' onClick={() =>
+                    window.open(edu.thesis_link, '_blank')}><strong>{edu.thesis}</strong></span> :
+                    <span><strong>{edu.thesis}</strong></span>
+                  }</> : null}
                 </Card.Text> : null}
 
                 <span className='timeline-date-loc'>
