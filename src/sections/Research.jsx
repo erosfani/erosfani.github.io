@@ -74,7 +74,7 @@ function Research() {
       ],
       venue: "Ph.D. Thesis",
       date: 2025,
-      link: "https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp",
+      link: "phd_thesis_eros_fani.pdf",
       cite: {
         text: "Fanì, E. (2025). Addressing Heterogeneity in Federated Learning for Real-world Vision Applications. Ph.D. Thesis.",
         bibtex: "@article{fani2025addressing,\n" +

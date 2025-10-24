@@ -161,9 +161,10 @@ const About = () => {
             <Card.Footer className="about-description">
 
               <p>
-
-                I have recently joined <strong> Gensyn </strong> in the role of
-                <strong> Machine Learning Researcher</strong>. Previously, I was a
+                I recently joined <strong> Gensyn </strong> as a
+                <strong> Machine Learning Researcher</strong>, where I am
+                currently pursuing research on Mixture of Experts and
+                Model Merging for Large Language Models. Previously, I was a
                 <span onClick={() =>
                   window.open('https://www.bcamath.org/en/people/bcam-members/efani', '_blank')}>
                   <> <span className='highlight'>
@@ -242,12 +243,12 @@ const About = () => {
               <p>
                 My research focuses on <strong>building scalable, distributed models</strong> over uniquely
                 <strong> decentralised and heterogeneous infrastructure</strong>, and on addressing the challenge of
-                <strong> Data Heterogeneity </strong> in real-world applications of <strong> Federated Learning</strong>.
+                <strong> data heterogeneity </strong> in real-world applications of <strong> federated learning</strong>.
                 Additionally, I possess a solid track record in
-                <strong> Semantic Segmentation</strong>,
-                <strong> Domain Adaptation</strong>,
-                <strong> Domain Generalization</strong>,
-                <strong> Semi-Supervised Learning</strong>.
+                <strong> semantic segmentation</strong>,
+                <strong> domain adaptation</strong>,
+                <strong> domain generalization</strong>,
+                <strong> semi-supervised learning</strong>.
               </p>
 
             </Card.Footer>
