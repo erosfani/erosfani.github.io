@@ -63,7 +63,7 @@ const About = () => {
               <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
-              window.open('cv_v202505.pdf', '_blank')}>
+              window.open('cv_v202512.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
@@ -208,7 +208,7 @@ const About = () => {
 
                 My Ph.D. was conducted within the framework of the
                 <span onClick={() =>
-                  window.open('https://ellis.eu/phd-postdoc', '_blank')}>
+                  window.open('https://ellis.eu/student/2021-eros-fani', '_blank')}>
                   <> <span className='highlight'>
                     European Laboratory for Learning and Intelligent Systems (<strong>ELLIS</strong>)
                     <strong> Ph.D. program</strong>
