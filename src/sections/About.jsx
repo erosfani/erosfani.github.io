@@ -4,7 +4,6 @@ import profile from "../assets/profile.jpg";
 import Scholar from "../components/logos/Scholar.jsx";
 import Github from "../components/logos/Github.jsx";
 import LinkedIn from "../components/logos/LinkedIn.jsx";
-import NewPageButton from "../components/NewPageButton.jsx";
 import {useEffect, useRef, useState} from "react";
 
 const About = () => {
@@ -84,6 +83,36 @@ const About = () => {
             <h3> News </h3>
             <ul className="news-list">
               <li>
+                <span className="date">04/2026:</span>
+                <span className="content">
+                  I will be attending <strong>ICML26 @ Rio de Janeiro</strong>!
+                  Join our poster session on Monday, April 27, 2026, at <strong>SPOT@ICLR</strong>. See you there!
+                </span>
+              </li>
+              <li>
+                <span className="date">04/2026:</span>
+                <span className="content">Check out my first Gensyn blog post, <span onClick={() =>
+                  window.open('https://blog.gensyn.ai/dume/', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>here</strong>
+                  </span></>
+                </span>!</span>
+              </li>
+              <li>
+                <span className="date">03/2026:</span>
+                <span className="content">Our paper “<span onClick={() =>
+                  window.open('https://arxiv.org/pdf/2603.29765', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>Training-Free Dynamic Upcycling of Expert Language Models</strong>
+                  </span></>
+                </span>”, has been accepted at <span onClick={() =>
+                  window.open('https://spoticlr.github.io/', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>SPOT@ICLR26</strong>
+                  </span></>
+                </span>!</span>
+              </li>
+              <li>
                 <span className="date">09/2025:</span>
                 <span className="content">I will join <span className='highlight'><strong>Gensyn</strong></span> as
                   a <span className='highlight'><strong>Machine Learning Researcher</strong></span>.
@@ -160,17 +189,16 @@ const About = () => {
             <Card.Footer className="about-description">
 
               <p>
-                I recently joined <strong> Gensyn </strong> as a
-                <strong> Machine Learning Researcher</strong>, where I am
+                I am a <strong>Machine Learning Researcher</strong> at <span onClick={() =>
+                  window.open('https://blog.gensyn.ai/author/eros/', '_blank')}>
+                  <> <span className='highlight'>
+                    <strong> Gensyn</strong>
+                  </span></>
+                </span>, where I am
                 currently pursuing research on Mixture of Experts and
                 Model Merging for Large Language Models. Previously, I was a
-                <span onClick={() =>
-                  window.open('https://www.bcamath.org/en/people/bcam-members/efani', '_blank')}>
-                  <> <span className='highlight'>
-                    <strong> Postdoctoral Fellow </strong>
-                    at the <strong> Basque Center for Applied Mathematics </strong>
-                  </span></>
-                </span>
+                <strong> Postdoctoral Fellow </strong>
+                at the <strong> Basque Center for Applied Mathematics </strong>
                 and a
                 <span onClick={() =>
                   window.open('https://wearepal.ai/team', '_blank')}>
@@ -182,24 +210,12 @@ const About = () => {
                 </span>.
 
                 I have earned a <strong> Ph.D. in Artificial Intelligence </strong>
-                at the
-                <span onClick={() =>
-                  window.open('https://vandal.polito.it/index.php/people/', '_blank')}>
-                  <> <span className='highlight'>
-                    Visual and Multimodal Applied Learning Laboratory
-                  </span> </>
-                </span>
+                at the <strong>Visual and Multimodal Applied Learning Laboratory </strong>
                 within the Artificial Intelligence Hub
-                at the
-                <span onClick={() =>
-                  window.open('https://www.polito.it/en/staff?p=eros.fani', '_blank')}>
-                  <> <span className='highlight'>
-                    <strong> Polytechnic University of Turin</strong>
-                  </span> </>
-                </span>
+                at the <strong> Polytechnic University of Turin </strong>
                 (thesis title:
                 <span onClick={() =>
-                  window.open('https://tesidottorato.depositolegale.it/static/PDF/web/viewer.jsp', '_blank')}>
+                  window.open('./phd_thesis_eros_fani.pdf', '_blank')}>
                   <> <span className='highlight'>
                     <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>
                   </span></>
@@ -222,6 +238,7 @@ const About = () => {
                 I have published and presented my work at several international peer-reviewed
                 conferences and workshops, including
                 <strong> ICML</strong>,
+                <strong> ICLR</strong>,
                 <strong> NeurIPS</strong>,
                 <strong> CVPR</strong>,
                 <strong> IROS</strong>,

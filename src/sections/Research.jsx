@@ -13,6 +13,37 @@ import NewPage from "../components/icons/NewPage.jsx";
 function Research() {
 
   const publications = [
+
+    {
+      title: "Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models",
+      authors: [
+        {
+          name: "Eros",
+          surname: "Fanì"
+        },
+        {
+          name: "Oğuzhan",
+          surname: "Ersoy"
+        },
+      ],
+      venue: "The 1st Workshop on Scaling Post-training for LLMs @ ICLR",
+      date: 2026,
+      link: "https://arxiv.org/pdf/2603.29765",
+      cite: {
+        text: "Fanì, Eros, and Oğuzhan Ersoy. Training-Free Dynamic Upcycling of Expert Language Models. 1st Workshop on Scaling Post-training for LLMs (SPOT) @ ICLR 2026.",
+        bibtex: "@misc{fani2026training,\n" +
+          "  title={Training-Free Dynamic Upcycling of Expert Language Models},\n" +
+          "  author={Fan{\`i}, Eros and Ersoy, O{\\u{g}}uzhan},\n" +
+          "  booktitle={1st Workshop on Scaling Post-training for LLMs (SPOT) @ ICLR 2026},\n" +
+          "  year={2026},\n" +
+          "}"
+      },
+      website: "https://blog.gensyn.ai/dume/",
+      code: "https://github.com/gensyn-ai/dume",
+      teaser_url: "assets/teasers/dume.png",
+      description: "Training LLMs is prohibitively expensive, and they often lack domain-specific expertise because they rely on general knowledge datasets. Dynamic Upcycling MoE (DUME) combines dense experts trained on different domains to construct a unified MoE multitask model that preserves the capabilities of the original dense experts. DUME is training-free, scalable, and cheap."
+    },
+
     {
       title: "Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models",
       authors: [
@@ -444,6 +475,11 @@ function Research() {
   ]
 
   const reviewer_conferences = [
+    {
+      acronym: "SPOT-ICLR",
+      name: "Workshop on Scaling Post-training for LLMs of the International Conference on Learning Representations",
+      years: ["2026"],
+    },
     {
       acronym: "NeurIPS",
       name: "Conference on Neural Information Processing Systems",
