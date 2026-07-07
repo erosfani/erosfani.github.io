@@ -7,7 +7,7 @@ function Experience() {
     {
       role: 'Machine Learning Researcher',
       org: 'Gensyn',
-      date: 'Oct 2025 - present',
+      date: 'Oct 2025 - Jul 2026',
       color: '#f7d5cf',
       color_from: '#2d99d5',
     },

@@ -14,8 +14,9 @@ function Research() {
 
   const publications = [
 
+
     {
-      title: "Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models",
+      title: "IR3DE: A Linear Router for Large Language Models",
       authors: [
         {
           name: "Eros",
@@ -26,15 +27,45 @@ function Research() {
           surname: "Ersoy"
         },
       ],
-      venue: "The 1st Workshop on Scaling Post-training for LLMs @ ICLR",
+      venue: "Resource-Adaptive Foundation Model Inference workshop (AdaptFM) @ ICML",
+      date: 2026,
+      link: "https://arxiv.org/pdf/2606.06098",
+      cite: {
+        text: "Fanì, Eros, and Oğuzhan Ersoy. IR3DE: A Linear Router for Large Language Models. Resource-Adaptive Foundation Model Inference workshop (AdaptFM) @ ICML 2026.",
+        bibtex: "@misc{fani2026training,\n" +
+          "  title={IR3DE: A Linear Router for Large Language Models},\n" +
+          "  author={Fan{\`i}, Eros and Ersoy, O{\\u{g}}uzhan},\n" +
+          "  booktitle={Resource-Adaptive Foundation Model Inference workshop (AdaptFM) @ ICML 2026},\n" +
+          "  year={2026},\n" +
+          "}"
+      },
+      website: "https://blog.gensyn.ai/look-beyond-one-size-fits-all-llms-with-ir3de/",
+      code: "https://github.com/gensyn-ai/IR3DE",
+      teaser_url: "assets/teasers/ir3de.png",
+      description: "IR3DE is a lightweight ridge regression-based router that efficiently selects the best domain-expert LLM for each prompt without requiring expensive training. IR3DE allows domain experts to be added or removed at any time without retraining and always achieves performance comparable to or better than existing routing methods."
+    },
+
+    {
+      title: "Training-Free Dynamic Upcycling of Expert language Models",
+      authors: [
+        {
+          name: "Eros",
+          surname: "Fanì"
+        },
+        {
+          name: "Oğuzhan",
+          surname: "Ersoy"
+        },
+      ],
+      venue: "Scaling Post-training for LLMs workshop (SPOT) @ ICLR",
       date: 2026,
       link: "https://arxiv.org/pdf/2603.29765",
       cite: {
-        text: "Fanì, Eros, and Oğuzhan Ersoy. Training-Free Dynamic Upcycling of Expert Language Models. 1st Workshop on Scaling Post-training for LLMs (SPOT) @ ICLR 2026.",
+        text: "Fanì, Eros, and Oğuzhan Ersoy. Training-Free Dynamic Upcycling of Expert Language Models. Scaling Post-training for LLMs (SPOT) workshop @ ICLR 2026.",
         bibtex: "@misc{fani2026training,\n" +
           "  title={Training-Free Dynamic Upcycling of Expert Language Models},\n" +
           "  author={Fan{\`i}, Eros and Ersoy, O{\\u{g}}uzhan},\n" +
-          "  booktitle={1st Workshop on Scaling Post-training for LLMs (SPOT) @ ICLR 2026},\n" +
+          "  booktitle={Scaling Post-training for LLMs (SPOT) workshop @ ICLR 2026},\n" +
           "  year={2026},\n" +
           "}"
       },
@@ -84,7 +115,7 @@ function Research() {
         text: "Németh, G. D., Fanì, E., Ng, Y. J., Caputo, B., Lozano, M. Á., Oliver, N., & Quadrianto, N. (2025). Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models. Third IEEE International Conference on Federated Learning Technologies and Applications (FLTA).",
         bibtex: "@article{nemeth2025diversity,\n" +
           "  title={Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models},\n" +
-          "  author={Németh, Gergely D and Fanì, Eros and Ng, Yeat Jeng and Caputo, Barbara and Lozano, Miguel Ángel and Oliver, Nuria and Quadrianto, Novi},\n" +
+          "  author={Németh, Gergely D and FanFan{\`i}, Eros and Ng, Yeat Jeng and Caputo, Barbara and Lozano, Miguel Ángel and Oliver, Nuria and Quadrianto, Novi},\n" +
           "  journal={Third IEEE International Conference on Federated Learning Technologies and Applications (FLTA)},\n" +
           "  year={2025}\n" +
           "}"
@@ -110,7 +141,7 @@ function Research() {
         text: "Fanì, E. (2025). Addressing Heterogeneity in Federated Learning for Real-world Vision Applications. Ph.D. Thesis.",
         bibtex: "@article{fani2025addressing,\n" +
                 "  title={Addressing Heterogeneity in Federated Learning for Real-world Vision Applications},\n" +
-                "  author={Fanì, Eros},\n" +
+                "  author={FanFan{\`i}, Eros},\n" +
                 "  year={2025},\n" +
                 "  publisher={Politecnico di Torino}\n" +
                 "}"
@@ -152,7 +183,7 @@ function Research() {
         text: "Licciardi, A., Leo, D., Fanì, E., Caputo, B., & Ciccone, M. (2025). Interaction-Aware Gaussian Weighting for Clustered Federated Learning. Forty-second International Conference on Machine Learning (ICML).",
         bibtex: "@article{licciardi2025interaction,\n" +
           "  title={Interaction-Aware Gaussian Weighting for Clustered Federated Learning},\n" +
-          "  author={Licciardi, Alessandro and Leo, Davide and Fanì, Eros and Caputo, Barbara and Ciccone, Marco},\n" +
+          "  author={Licciardi, Alessandro and Leo, Davide and FanFan{\`i}, Eros and Caputo, Barbara and Ciccone, Marco},\n" +
           "  journal={Forty-second International Conference on Machine Learning (ICML)},\n" +
           "  year={2025}\n" +
           "}"
@@ -190,7 +221,7 @@ function Research() {
         text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2025). Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers. IEEE Access.",
         bibtex: "@article{fani2025resource,\n" +
           "  title={Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers},\n" +
-          "  author=Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
+          "  author=FanFan{\`i}, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
           "  journal={IEEE Access},\n" +
           "  year={2025},\n" +
           "  publisher={IEEE}\n" +
@@ -229,7 +260,7 @@ function Research() {
         text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2024). Accelerating heterogeneous federated learning with closed-form classifiers. Forty-first International Conference on Machine Learning (ICML).",
         bibtex: "@article{fani2024accelerating,\n" +
           "  title={Accelerating heterogeneous federated learning with closed-form classifiers},\n" +
-          "  author={Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
+          "  author={Fan{\`i}, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
           "  journal={Forty-first International Conference on Machine Learning (ICML)},\n" +
           "  year={2024}\n" +
           "}"
@@ -314,7 +345,7 @@ function Research() {
         text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2023). Fed3R: Recursive Ridge Regression for Federated Learning with strong pre-trained models. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS (FL@FM NeurIPS).",
         bibtex: "@inproceedings{fani2023fed3r,\n" +
           "  title={Fed3R: Recursive Ridge Regression for Federated Learning with strong pre-trained models},\n" +
-          "  author={Fanì, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
+          "  author={Fan{\`i}, Eros and Camoriano, Raffaello and Caputo, Barbara and Ciccone, Marco},\n" +
           "  journal={International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS (FL@FM NeurIPS)},\n" +
           "  year={2023}\n" +
           "}"
@@ -348,7 +379,7 @@ function Research() {
         text: "Fanì, E., Ciccone, M., & Caputo, B. (2023). Feddrive v2: an analysis of the impact of label skewness in federated semantic segmentation for autonomous driving. 5th Italian Conference on Robotics and Intelligent Machines (I-RIM)",
         bibtex: "@article{fani2023feddrive,\n" +
           "  title={Feddrive v2: an analysis of the impact of label skewness in federated semantic segmentation for autonomous driving},\n" +
-          "  author={Fanì, Eros and Ciccone, Marco and Caputo, Barbara},\n" +
+          "  author={Fan{\`i}, Eros and Ciccone, Marco and Caputo, Barbara},\n" +
           "  journal={5th Italian Conference on Robotics and Intelligent Machines (I-RIM)},\n" +
           "  year={2023}\n" +
           "}"
@@ -476,14 +507,19 @@ function Research() {
 
   const reviewer_conferences = [
     {
-      acronym: "SPOT-ICLR",
-      name: "Workshop on Scaling Post-training for LLMs of the International Conference on Learning Representations",
+      acronym: "NeurIPS",
+      name: "Conference on Neural Information Processing Systems",
+      years: ["2026", "2025", "2024"],
+    },
+    {
+      acronym: "AdaptFM-ICML",
+      name: "Resource-Adaptive Foundation Model Inference workshop of the International Conference on Machine Learning",
       years: ["2026"],
     },
     {
-      acronym: "NeurIPS",
-      name: "Conference on Neural Information Processing Systems",
-      years: ["2025", "2024"],
+      acronym: "SPOT-ICLR",
+      name: "Scaling Post-training for LLMs workshop of the International Conference on Learning Representations",
+      years: ["2026"],
     },
     {
       acronym: "RA-L",

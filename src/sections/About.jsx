@@ -62,13 +62,13 @@ const About = () => {
               <LinkedIn/>
             </Button>
             <Button size='lg' className='about-button' onClick={() =>
-              window.open('cv_v202512.pdf', '_blank')}>
+              window.open('cv_v202607.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
           </Container>
 
           <Badge className='contacts' bg=''>
-            <a href='mailto:eros@gensyn.ai'> eros@gensyn.ai </a>
+            <a href='mailto:eros.fani@gmail.com'> eros.fani@gmail.com </a>
           </Badge>
 
           <Container
@@ -82,6 +82,29 @@ const About = () => {
           >
             <h3> News </h3>
             <ul className="news-list">
+              <li>
+                <span className="date">06/2026:</span>
+                <span className="content">Check out my second Gensyn blog post <span onClick={() =>
+                  window.open('https://blog.gensyn.ai/look-beyond-one-size-fits-all-llms-with-ir3de/', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>here</strong>
+                  </span></>
+                </span>!</span>
+              </li>
+              <li>
+                <span className="date">05/2026:</span>
+                <span className="content">Our paper “<span onClick={() =>
+                  window.open('https://arxiv.org/pdf/2606.06098', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>IR3DE: A Linear Router for Large Language Models</strong>
+                  </span></>
+                </span>”, has been accepted at <span onClick={() =>
+                  window.open('https://adaptfm.gitlab.io/', '_blank')}>
+                  <><span className='highlight'>
+                    <strong>AdaptFM@ICLR26</strong>
+                  </span></>
+                </span>!</span>
+              </li>
               <li>
                 <span className="date">04/2026:</span>
                 <span className="content">
@@ -169,7 +192,7 @@ const About = () => {
               <li>
                 <span className="date">11/2024:</span>
                 <span className="content">I am happy to share that I am starting a new position as a
-                  <strong> Research Fellow Software Engineer</strong> at the
+                  <strong> Postdoctoral Fellow Software Engineer</strong> at the
                   <strong> Basque Center for Applied Mathematics (BCAM)</strong>! </span>
               </li>
               <li>
@@ -187,18 +210,11 @@ const About = () => {
             <CardGroup><h2> About me </h2></CardGroup>
 
             <Card.Footer className="about-description">
-
               <p>
-                I am a <strong>Machine Learning Researcher</strong> at <span onClick={() =>
-                  window.open('https://blog.gensyn.ai/author/eros/', '_blank')}>
-                  <> <span className='highlight'>
-                    <strong> Gensyn</strong>
-                  </span></>
-                </span>, where I am
-                currently pursuing research on Mixture of Experts and
-                Model Merging for Large Language Models. Previously, I was a
-                <strong> Postdoctoral Fellow </strong>
-                at the <strong> Basque Center for Applied Mathematics </strong>
+                I am currently pursuing research on Mixture of Experts and Model Merging for Large Language Models.
+                Previously, I was a <strong>Machine Learning Researcher</strong> at 
+                <span className='highlight'><strong> Gensyn</strong></span>, a
+                <strong> Postdoctoral Fellow </strong> at the <strong> Basque Center for Applied Mathematics </strong>,
                 and a
                 <span onClick={() =>
                   window.open('https://wearepal.ai/team', '_blank')}>
@@ -266,6 +282,8 @@ const About = () => {
                 <strong> domain generalization</strong>,
                 <strong> semi-supervised learning</strong>.
               </p>
+
+              <p>I am always driven by curiosity and have a strong interest in exploring new ideas and challenges within and beyond my current research.</p>
 
             </Card.Footer>
 
