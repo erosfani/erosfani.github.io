@@ -14,7 +14,7 @@ function Experience() {
     {
       role: 'Postdoctoral Fellow & Software Engineer',
       org: 'Basque Center for Applied Mathematics',
-      date: 'Nov 2024 - Sep 2025',
+      date: 'Nov 2024 - Oct 2025',
       color: '#2295d3',
       color_from: '#0d3652',
     },

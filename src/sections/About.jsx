@@ -212,8 +212,7 @@ const About = () => {
             <Card.Footer className="about-description">
               <p>
                 I am currently pursuing research on Mixture of Experts and Model Merging for Large Language Models.
-                Previously, I was a <strong>Machine Learning Researcher</strong> at 
-                <span className='highlight'><strong> Gensyn</strong></span>, a
+                Previously, I was a <strong>Machine Learning Researcher</strong> at <strong> Gensyn </strong>, a
                 <strong> Postdoctoral Fellow </strong> at the <strong> Basque Center for Applied Mathematics </strong>,
                 and a
                 <span onClick={() =>
