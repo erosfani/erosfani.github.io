@@ -1,4 +1,4 @@
-import {Badge, Button, Card, CardGroup, Col, Container, Row} from "react-bootstrap";
+import {Badge, Button, Card, CardGroup, Col, Container, Dropdown, Row} from "react-bootstrap";
 import TypingText from "../components/TypingText.jsx";
 import profile from "../assets/profile.jpg";
 import Scholar from "../components/logos/Scholar.jsx";
@@ -48,7 +48,7 @@ const About = () => {
       <Row>
         <Col xs={12} md={4}>
           <img src={profile} alt="Profile" className='profile'/>
-          <Container className="mb-lg-2" fluid>
+          <Container className="mb-lg-2 about-button-row" fluid>
             <Button size='lg' className='about-button' onClick={() =>
               window.open('https://scholar.google.com/citations?user=rwto7AgAAAAJ&hl=en', '_blank')}>
               <Scholar/>
@@ -61,10 +61,33 @@ const About = () => {
               window.open('https://www.linkedin.com/in/eros-fani/', '_blank')}>
               <LinkedIn/>
             </Button>
+
+            <div className="about-button-break" aria-hidden="true"/>
+
+            <Button size='lg' className='about-button' onClick={() =>
+              window.open('resume_v202607.pdf', '_blank')}>
+             <strong> Resume </strong>
+            </Button>
+
             <Button size='lg' className='about-button' onClick={() =>
               window.open('cv_v202607.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
+
+            {/* <Dropdown className='about-button-dropdown'>
+              <Dropdown.Toggle size='lg' className='about-button'>
+                <strong> CV </strong>
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item onClick={() => window.open('resume_v202607.pdf', '_blank')}>
+                  Resume
+                </Dropdown.Item>
+                <Dropdown.Item onClick={() => window.open('cv_v202607.pdf', '_blank')}>
+                  Complete CV
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown> */}
+            
           </Container>
 
           <Badge className='contacts' bg=''>
