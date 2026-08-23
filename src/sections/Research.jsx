@@ -340,7 +340,7 @@ function Research() {
       ],
       venue: "International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS (FL@FM NeurIPS)",
       date: 2023,
-      link: "https://openreview.net/pdf?id=LiSj1GRVhL",
+      link: "fed3r-paper.pdf",
       cite: {
         text: "Fanì, E., Camoriano, R., Caputo, B., & Ciccone, M. (2023). Fed3R: Recursive Ridge Regression for Federated Learning with strong pre-trained models. In International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS (FL@FM NeurIPS).",
         bibtex: "@inproceedings{fani2023fed3r,\n" +
@@ -353,7 +353,7 @@ function Research() {
       website: "https://fed-3r.github.io/",
       code: "https://github.com/Erosinho13/Fed3R",
       teaser_url: "assets/teasers/fed3r_workshop.png",
-      description: "Fed3R replaces the softmax classifier in Federated Learning with a closed-form ridge regression classifier robust to statistical heterogeneity. Fed3R convergences fast with low communication costs. Its incremental formulation is equivalent to the centralized solution using fixed pre-trained features, allowing for the usage of large feature extractors in FL, as backpropagation is not required. Moreover, Fed3R-RF achieves near-centralized accuracy with minimal overhead."
+      description: "Fed3R replaces the softmax classifier in Federated Learning with a closed-form ridge-regression classifier that is robust to statistical heterogeneity. Fed3R converges fast with low communication costs. Its incremental formulation is equivalent to the centralized solution that uses fixed pre-trained features, enabling the use of large feature extractors in FL, since backpropagation is not required. Moreover, Fed3R-RF achieves near-centralized accuracy with minimal overhead."
     },
 
     {
@@ -435,7 +435,7 @@ function Research() {
       ],
       venue: "IEEE/CVF winter conference on applications of computer vision (WACV)",
       date: 2023,
-      link: "https://arxiv.org/pdf/2309.13336",
+      link: "https://arxiv.org/pdf/2210.02326",
       cite: {
         text: "Shenaj, D., Fanì, E., Toldo, M., Caldarola, D., Tavera, A., Michieli, U., Ciccone, M., Zanuttigh, P. & Caputo, B. (2023). Learning across domains and devices: Style-driven source-free domain adaptation in clustered federated learning. IEEE/CVF winter conference on applications of computer vision (WACV).",
         bibtex: "@inproceedings{shenaj2023learning,\n" +
