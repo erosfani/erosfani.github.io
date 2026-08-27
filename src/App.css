@@ -111,6 +111,18 @@ main > div:nth-child(even) {
   align-content: center;
 }
 
+.navbar-container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-container {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
 .navbar-brand:hover .logo-circle {
   border: 3px solid var(--accent);
   box-shadow: 0 0 12px var(--accent-glow);

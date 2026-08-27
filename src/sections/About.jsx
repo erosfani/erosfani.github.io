@@ -62,9 +62,16 @@ const About = () => {
     const updateLayout = () => {
       if (!anchorRef.current || !aboutMeRef.current) return;
 
-      const anchorBottom = anchorRef.current.getBoundingClientRect().bottom;
-      const aboutBottom = aboutMeRef.current.getBoundingClientRect().bottom;
-      const available = aboutBottom - anchorBottom - NEWS_MARGIN_TOP;
+      const anchorRect = anchorRef.current.getBoundingClientRect();
+      const aboutRect = aboutMeRef.current.getBoundingClientRect();
+
+      if (aboutRect.top >= anchorRect.bottom) {
+        setNewsBelow(false);
+        setInlineMaxHeight(NEWS_FULL_WIDTH_MAX_HEIGHT);
+        return;
+      }
+
+      const available = aboutRect.bottom - anchorRect.bottom - NEWS_MARGIN_TOP;
 
       setNewsBelow(prevBelow =>
         prevBelow ? available < NEWS_EXPAND_THRESHOLD : available <= NEWS_COLLAPSE_THRESHOLD

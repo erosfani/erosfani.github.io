@@ -11,11 +11,11 @@ function NavigationBar(props) {
 
   return (
 
-    <Navbar expand="sm" bg={resolvedTheme === 'dark' ? 'dark' : 'light'}
+    <Navbar expand="lg" bg={resolvedTheme === 'dark' ? 'dark' : 'light'}
             variant={resolvedTheme === 'dark' ? 'dark' : 'light'} fixed="top"
             expanded={expanded} onToggle={() => setExpanded(prev => !prev)}>
 
-      <Container className='mx-auto'>
+      <Container fluid className='navbar-container'>
 
         <Navbar.Brand href="#about" active=""
                       className={props.activeSection === 'about' ? 'active_tab' : undefined}
