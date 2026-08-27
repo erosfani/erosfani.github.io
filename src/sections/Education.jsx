@@ -17,7 +17,7 @@ function Education() {
         </Col>
       </Row>
       {educations.map((edu, index) => (
-        <Row key={index}>
+        <Row key={index} className="timeline-row">
           <Col xs={1} className="d-none d-sm-block">
           </Col>
           <Col xs={1} className={`d-none d-sm-block ${
@@ -26,11 +26,7 @@ function Education() {
                 index === educations.length - 1 ?
                   'timeline timeline-last' :
                   'timeline')
-          }`} style={edu.color_from ? {
-            borderLeft: '5px solid',
-            borderImage: 'linear-gradient(to bottom, ' + edu.color + ' 65%, ' + edu.color_from + ' 100%) 1 100%'
-          } : {'--timelineColor': edu.color}
-          }>
+          }`} style={{'--timelineColor': edu.color, '--timelineColorFrom': edu.color_from}}>
             <div className={index === 0 ?
               'timeline-dot timeline-dot-first' : (
                 index === educations.length - 1 ?

@@ -14,7 +14,7 @@ function Experience() {
         </Col>
       </Row>
       {experiences.map((exp, index) => (
-        <Row key={index}>
+        <Row key={index} className="timeline-row">
           <Col xs={1} className="d-none d-sm-block">
           </Col>
           <Col xs={1} className={`d-none d-sm-block ${
@@ -23,11 +23,7 @@ function Experience() {
                 index === experiences.length - 1 ?
                   'timeline timeline-last' :
                   'timeline')
-          }`} style={exp.color_from ? {
-            borderLeft: '5px solid',
-            borderImage: 'linear-gradient(to bottom, ' + exp.color + ' 65%, ' + exp.color_from + ' 100%) 1 100%'
-          } : {'--timelineColor': exp.color}
-          }>
+          }`} style={{'--timelineColor': exp.color, '--timelineColorFrom': exp.color_from}}>
             <div className={index === 0 ?
               'timeline-dot timeline-dot-first' : (
                 index === experiences.length - 1 ?
