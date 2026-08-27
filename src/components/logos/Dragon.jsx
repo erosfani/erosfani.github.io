@@ -2,7 +2,7 @@ function Dragon() {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
          width="40" height="40" viewBox="-27 -27 342 342"
-         preserveAspectRatio="xMidYMid meet" className="logo-circle">
+         preserveAspectRatio="xMidYMid meet" className="logo-circle" fill="currentColor">
       <g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)" stroke="none">
         <path d="M1261 2630 c-110 -23 -221 -72 -326 -143 -98 -67 -230 -209 -410
                   -442 -196 -253 -317 -381 -430 -455 -91 -60 -68 -62 53 -5 136 64 266 179 446

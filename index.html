@@ -5,6 +5,16 @@
     <link rel="icon" type="image/x-icon" href="/src/assets/black_dragon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eros Fanì</title>
+    <script>
+      (function () {
+        try {
+          var pref = localStorage.getItem('theme-preference');
+          if (pref === 'light' || pref === 'dark') {
+            document.documentElement.setAttribute('data-theme', pref);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

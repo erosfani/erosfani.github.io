@@ -1,14 +1,18 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import Dragon from "./logos/Dragon.jsx";
 import {useState} from "react";
+import ThemeToggle from "./ThemeToggle.jsx";
+import useTheme from "../hooks/useTheme.js";
 
 function NavigationBar(props) {
 
   const [expanded, setExpanded] = useState(false);
+  const {preference, resolvedTheme, setPreference} = useTheme();
 
   return (
 
-    <Navbar expand="sm" bg="light" variant="light" fixed="top"
+    <Navbar expand="sm" bg={resolvedTheme === 'dark' ? 'dark' : 'light'}
+            variant={resolvedTheme === 'dark' ? 'dark' : 'light'} fixed="top"
             expanded={expanded} onToggle={() => setExpanded(prev => !prev)}>
 
       <Container className='mx-auto'>
@@ -46,6 +50,8 @@ function NavigationBar(props) {
               Research
             </Nav.Link>
           </Nav>
+
+          <ThemeToggle preference={preference} onChange={setPreference}/>
 
         </Navbar.Collapse>
 
