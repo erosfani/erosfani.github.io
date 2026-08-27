@@ -112,20 +112,6 @@ const About = () => {
               window.open('cv_v202608.pdf', '_blank')}>
               <strong> CV </strong>
             </Button>
-
-            {/* <Dropdown className='about-button-dropdown'>
-              <Dropdown.Toggle size='lg' className='about-button'>
-                <strong> CV </strong>
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item onClick={() => window.open('resume_v202607.pdf', '_blank')}>
-                  Resume
-                </Dropdown.Item>
-                <Dropdown.Item onClick={() => window.open('cv_v202607.pdf', '_blank')}>
-                  Complete CV
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown> */}
             
           </Container>
 
@@ -150,60 +136,11 @@ const About = () => {
         <Col xs={12} md={8}>
           <Card ref={aboutMeRef} className='p-3 p-lg-5 mb-5 about'>
 
-            <CardGroup><h2> About me </h2></CardGroup>
+            {/*<CardGroup><h2> About me </h2></CardGroup>*/}
 
             <Card.Footer className="about-description">
               <ReactMarkdown components={aboutMeRenderers}>{aboutMeMarkdown}</ReactMarkdown>
             </Card.Footer>
-
-            {/*<CardGroup> <h4> Affiliations </h4> </CardGroup>*/}
-
-            {/*<Card.Footer style={{textAlign: 'left', backgroundColor: 'white'}}>*/}
-
-            {/*  <ul>*/}
-
-            {/*    <li>*/}
-            {/*    <span className="bind"> Gensyn*/}
-            {/*      <NewPageButton url='about:blank' /> </span>*/}
-            {/*    </li>*/}
-
-            {/*  </ul>*/}
-
-            {/*  <CardGroup> <h5> Past affiliations </h5> </CardGroup>*/}
-
-            {/*  <ul>*/}
-
-            {/*    <li>*/}
-            {/*      Basque Center for Applied Mathematics <span className="bind"> (BCAM)*/}
-            {/*      <NewPageButton url='https://www.bcamath.org/en/people/bcam-members/efani' /> </span>*/}
-            {/*    </li>*/}
-
-            {/*    <li>*/}
-            {/*      University of Sussex, Predictive Analytics <span className="bind"> Lab*/}
-            {/*      <NewPageButton url='https://wearepal.ai/team' /> </span>*/}
-            {/*    </li>*/}
-
-            {/*    <li> Polytechnic University of Turin (PoliTo):</li>*/}
-            {/*    <ul>*/}
-            {/*      <li>*/}
-            {/*        Department of Control and Computer Engineering <span className="bind"> (DAUIN)*/}
-            {/*        <NewPageButton url='https://www.polito.it/en/staff?p=eros.fani' /> </span>*/}
-            {/*      </li>*/}
-            {/*      <li>*/}
-            {/*        Artificial Intelligence Hub (AIH),*/}
-            {/*        Visual And Multimodal Applied Learning Laboratory <span className="bind"> (VANDAL)*/}
-            {/*        <NewPageButton url='https://vandal.polito.it/index.php/people/' /> </span>*/}
-            {/*      </li>*/}
-            {/*    </ul>*/}
-
-            {/*    <li>*/}
-            {/*      European Laboratory for Learning and Intelligent Systems <span className="bind"> (ELLIS)*/}
-            {/*      <NewPageButton url='https://ellis.eu/phd-postdoc' /> </span>*/}
-            {/*    </li>*/}
-
-            {/*  </ul>*/}
-
-            {/*</Card.Footer>*/}
 
           </Card>
 

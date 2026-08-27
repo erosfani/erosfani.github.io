@@ -325,8 +325,9 @@ main > div:nth-child(even) {
 .about-description {
   text-align: left;
   background-color: var(--bg-surface);
-  margin-bottom: 1em;
-  padding-top: 1em;
+  margin-bottom: 0;
+  border-top: 0;
+  padding: 0;
 }
 
 .bind {
