@@ -1,0 +1,13 @@
+- **06/2026:** Check out my second Gensyn blog post [**here**](https://blog.gensyn.ai/look-beyond-one-size-fits-all-llms-with-ir3de/)!
+- **05/2026:** Our paper “[**IR3DE: A Linear Router for Large Language Models**](https://arxiv.org/pdf/2606.06098)”, has been accepted at [**AdaptFM@ICML26**](https://adaptfm.gitlab.io/)!
+- **04/2026:** I will be attending **ICLR26 @ Rio de Janeiro**! Join our poster session on Monday, April 27, 2026, at **SPOT@ICLR**. See you there!
+- **04/2026:** Check out my first Gensyn blog post, [**here**](https://blog.gensyn.ai/dume/)!
+- **03/2026:** Our paper “[**Training-Free Dynamic Upcycling of Expert Language Models**](https://arxiv.org/pdf/2603.29765)”, has been accepted at [**SPOT@ICLR26**](https://spoticlr.github.io/)!
+- **09/2025:** I will join **Gensyn** as a **Machine Learning Researcher**. I am thrilled about this new position and look forward to starting in October!
+- **08/2025:** Our paper “[**FedDiverse: Tackling Data Heterogeneity in Federated Learning with Diversity-Driven Client Selection**](https://arxiv.org/pdf/2504.11216)” has been accepted at **FLTA25**!
+- **07/2025:** I am excited to announce that I **successfully defended my Ph.D. on July 9**! Check out my Ph.D. thesis [**here**](phd_thesis_eros_fani.pdf).
+- **06/2025:** I will be attending **ICML25 @ Vancouver**! Join our poster session at the East Exhibition Hall A-B #E-1202, at the poster session 3, on Wednesday, July 16, at 11 a.m. local time. See you there!
+- **05/2025:** Our new paper “[**Interaction-Aware Gaussian Weighting for Clustered Federated Learning**](https://arxiv.org/pdf/2502.03340)” has been accepted at **ICML25**!
+- **03/2025:** Check out our new paper, “[**Resource-Efficient Personalization in Federated Learning with Closed-Form Classifiers**](https://ieeexplore.ieee.org/abstract/document/10946159)”, accepted at **IEEE Access**!
+- **11/2024:** I am happy to share that I am starting a new position as a **Postdoctoral Fellow Software Engineer** at the **Basque Center for Applied Mathematics (BCAM)**!
+- **09/2024:** I am proud to announce that I have been awarded as **Outstanding Reviewer** for **ECCV24**!

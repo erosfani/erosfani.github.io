@@ -1,0 +1,91 @@
+[
+  {
+    "acronym": "NeurIPS",
+    "name": "Conference on Neural Information Processing Systems",
+    "years": [
+      "2026",
+      "2025",
+      "2024"
+    ]
+  },
+  {
+    "acronym": "AdaptFM-ICML",
+    "name": "Resource-Adaptive Foundation Model Inference workshop of the International Conference on Machine Learning",
+    "years": [
+      "2026"
+    ]
+  },
+  {
+    "acronym": "SPOT-ICLR",
+    "name": "Scaling Post-training for LLMs workshop of the International Conference on Learning Representations",
+    "years": [
+      "2026"
+    ]
+  },
+  {
+    "acronym": "RA-L",
+    "name": "IEEE Robotics and Automation Letters",
+    "years": [
+      "2025",
+      "2022"
+    ]
+  },
+  {
+    "acronym": "ECAI",
+    "name": "European Conference on Artificial Intelligence",
+    "years": [
+      "2025"
+    ],
+    "pc": "https://ecai2025.org/program-committee/"
+  },
+  {
+    "acronym": "CVPR",
+    "name": "IEEE/CVF Computer Vision and Pattern Recognition Conference",
+    "years": [
+      "2025"
+    ]
+  },
+  {
+    "acronym": "TMLR",
+    "name": "Transactions on Machine Learning Research",
+    "years": [
+      "2024"
+    ]
+  },
+  {
+    "acronym": "ECCV",
+    "name": "European Conference on Computer Vision",
+    "years": [
+      "2024"
+    ],
+    "outstanding": "certificate_outstanding_reviewer_ECCV24.pdf"
+  },
+  {
+    "acronym": "ICDL",
+    "name": "IEEE International Conference on Development and Learning",
+    "years": [
+      "2023"
+    ]
+  },
+  {
+    "acronym": "ECML-PKDD",
+    "name": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+    "years": [
+      "2023"
+    ]
+  },
+  {
+    "acronym": "ICRA",
+    "name": "IEEE International Conference on Robotics and Automation",
+    "years": [
+      "2023"
+    ]
+  },
+  {
+    "acronym": "L2ID-ECCV",
+    "name": "Learning from Limited and Imperfect Data workshop of the European Conference on Computer Vision",
+    "years": [
+      "2022"
+    ]
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "course": "Ph.D. in Computer and Control Engineering",
+    "org": "Polytechnic University of Turin",
+    "date": "Nov 2021 - Jul 2025",
+    "description": "Advisor: Prof. B. Caputo ⋅ PoliTo",
+    "thesis": "Addressing Heterogeneity in Federated Learning for Real-world Vision Applications",
+    "thesis_link": "phd_thesis_eros_fani.pdf",
+    "color": "#0d3652"
+  },
+  {
+    "course": "ELLIS Ph.D. program - Academic track",
+    "org": "European Laboratory for Learning and Intelligent Systems",
+    "date": "Nov 2021 - Jul 2025",
+    "description": "Primary Host: Prof. B. Caputo · PoliTo\nExchange Host: Prof. N. Quadrianto · University of Sussex",
+    "color": "#0d3652",
+    "color_from": "#ffca51"
+  },
+  {
+    "course": "Visiting period at the University of Sussex for the ELLIS Exchange",
+    "org": "University of Sussex, European Laboratory for Learning and Intelligent Systems",
+    "date": "May 2024 - Oct 2024",
+    "description": "Research Advisor: Prof. N. Quadrianto · University of Sussex",
+    "color": "#ffca51",
+    "color_from": "#c3eb9c"
+  },
+  {
+    "course": "Visiting period at ELLIS Alicante",
+    "org": "ELLIS Alicante, European Laboratory for Learning and Intelligent Systems",
+    "date": "Sep 2024",
+    "description": "Research Advisor: Prof. N. Oliver · ELLIS Alicante",
+    "color": "#c3eb9c",
+    "color_from": "#0d3652"
+  },
+  {
+    "course": "MSc in Data Science and Engineering",
+    "org": "Polytechnic University of Turin",
+    "date": "Oct 2019 - Oct 2021",
+    "grade": "110/110 cum laude",
+    "thesis": "On the Challenges of Class Imbalance in Federated Learning for Semantic Segmentation",
+    "color": "#0d3652"
+  },
+  {
+    "course": "BSc in Computer Engineering",
+    "org": "Polytechnic University of Turin",
+    "date": "Oct 2016 - Jul 2019",
+    "grade": "108/110",
+    "color": "#0d3652"
+  },
+  {
+    "course": "Young Talent Project",
+    "org": "Polytechnic University of Turin, CRT Foundation",
+    "date": "Oct 2016 - Jul 2019",
+    "description": "Study program of excellence open only to the 2% top-tier students admitted to the PoliTo for the A.Y. 2016/17",
+    "color": "#0d3652",
+    "color_from": "#5a7c93"
+  },
+  {
+    "course": "High school diploma",
+    "org": "Liceo Scientifico Statale M. Curie Giulianova",
+    "date": "Sep 2011 - Jul 2016",
+    "grade": "100/100 cum laude",
+    "color": "#5a7c93"
+  }
+]

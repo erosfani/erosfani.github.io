@@ -1,86 +1,8 @@
 import {Card, Col, Container, Row} from "react-bootstrap";
 import getWindowWidth from "../components/getWindowWidth.jsx";
+import experiences from "../content/experience/experiences.json";
 
 function Experience() {
-
-  const experiences = [
-    {
-      role: 'Machine Learning Researcher',
-      org: 'Gensyn',
-      date: 'Oct 2025 - Jul 2026',
-      color: '#f7d5cf',
-      color_from: '#2d99d5',
-    },
-    {
-      role: 'Postdoctoral Fellow & Software Engineer',
-      org: 'Basque Center for Applied Mathematics',
-      date: 'Nov 2024 - Oct 2025',
-      color: '#2295d3',
-      color_from: '#0d3652',
-    },
-    {
-      role: 'MSc thesis supervisor',
-      org: 'Polytechnic University of Turin',
-      date: 'Sep 2023 - Oct 2024',
-      topic: 'Clustered Federated Learning',
-      color: '#0d3652',
-    },
-    {
-      role: 'Teaching assistant',
-      org: 'Polytechnic University of Turin',
-      date: 'A.Y. 2022/23',
-      color: '#0d3652',
-      courses: [
-        {
-          type: 'Graduate',
-          name: 'Machine Learning and Deep Learning'
-        },
-        {
-          type: 'Graduate',
-          name: 'Advanced Machine Learning'
-        },
-        {
-          type: 'Graduate',
-          name: 'Data Analytics and Artificial Intelligence'
-        },
-        {
-          type: 'Graduate',
-          name: 'Web Applications I'
-        },
-        {
-          type: 'Undergraduate',
-          name: 'Computer Science'
-        },
-      ],
-    },
-    {
-      role: 'MSc thesis supervisor',
-      org: 'Polytechnic University of Turin',
-      date: 'Sep 2022 - Jul 2023',
-      topic: 'Federated Visual Geo-Localization',
-      color: '#0d3652',
-    },
-    {
-      role: 'Teaching collaborator as an undergrad',
-      org: 'Polytechnic University of Turin',
-      date: 'A.Y. 2018/19',
-      color: '#0d3652',
-      courses: [
-        {
-          type: 'Undergraduate',
-          name: 'Algorithms and Programming'
-        },
-        {
-          type: 'Undergraduate',
-          name: 'Mathematical Analysis I'
-        },
-        {
-          type: 'Undergraduate',
-          name: 'Mathematical Analysis II'
-        },
-      ],
-    },
-  ];
 
   const width = getWindowWidth();
 

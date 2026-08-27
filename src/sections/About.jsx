@@ -4,7 +4,46 @@ import profile from "../assets/profile.jpg";
 import Scholar from "../components/logos/Scholar.jsx";
 import Github from "../components/logos/Github.jsx";
 import LinkedIn from "../components/logos/LinkedIn.jsx";
-import {useEffect, useRef, useState} from "react";
+import {Children, useEffect, useRef, useState} from "react";
+import ReactMarkdown from "react-markdown";
+import aboutMeMarkdown from "../content/about.md?raw";
+import newsMarkdown from "../content/news.md?raw";
+
+const highlightLink = ({href, children}) => {
+  if (href.startsWith('#')) {
+    return (
+      <a href={href} className='highlight' style={{textDecoration: 'underline'}}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <span className='highlight' onClick={() => window.open(href, '_blank')}>
+      {children}
+    </span>
+  );
+};
+
+const aboutMeRenderers = {
+  a: highlightLink,
+};
+
+const newsRenderers = {
+  a: highlightLink,
+  ul: ({children}) => <ul className='news-list'>{children}</ul>,
+  li: ({children}) => {
+    const [dateNode, ...rest] = Children.toArray(children);
+    if (typeof rest[0] === 'string') {
+      rest[0] = rest[0].replace(/^\s+/, '');
+    }
+    return (
+      <li>
+        <span className='date'>{dateNode}</span>
+        <span className='content'>{rest}</span>
+      </li>
+    );
+  },
+};
 
 const About = () => {
 
@@ -104,126 +143,7 @@ const About = () => {
             fluid
           >
             <h3> News </h3>
-            <ul className="news-list">
-              <li>
-                <span className="date">06/2026:</span>
-                <span className="content">Check out my second Gensyn blog post <span onClick={() =>
-                  window.open('https://blog.gensyn.ai/look-beyond-one-size-fits-all-llms-with-ir3de/', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>here</strong>
-                  </span></>
-                </span>!</span>
-              </li>
-              <li>
-                <span className="date">05/2026:</span>
-                <span className="content">Our paper “<span onClick={() =>
-                  window.open('https://arxiv.org/pdf/2606.06098', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>IR3DE: A Linear Router for Large Language Models</strong>
-                  </span></>
-                </span>”, has been accepted at <span onClick={() =>
-                  window.open('https://adaptfm.gitlab.io/', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>AdaptFM@ICML26</strong>
-                  </span></>
-                </span>!</span>
-              </li>
-              <li>
-                <span className="date">04/2026:</span>
-                <span className="content">
-                  I will be attending <strong>ICLR26 @ Rio de Janeiro</strong>!
-                  Join our poster session on Monday, April 27, 2026, at <strong>SPOT@ICLR</strong>. See you there!
-                </span>
-              </li>
-              <li>
-                <span className="date">04/2026:</span>
-                <span className="content">Check out my first Gensyn blog post, <span onClick={() =>
-                  window.open('https://blog.gensyn.ai/dume/', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>here</strong>
-                  </span></>
-                </span>!</span>
-              </li>
-              <li>
-                <span className="date">03/2026:</span>
-                <span className="content">Our paper “<span onClick={() =>
-                  window.open('https://arxiv.org/pdf/2603.29765', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>Training-Free Dynamic Upcycling of Expert Language Models</strong>
-                  </span></>
-                </span>”, has been accepted at <span onClick={() =>
-                  window.open('https://spoticlr.github.io/', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>SPOT@ICLR26</strong>
-                  </span></>
-                </span>!</span>
-              </li>
-              <li>
-                <span className="date">09/2025:</span>
-                <span className="content">I will join <span className='highlight'><strong>Gensyn</strong></span> as
-                  a <span className='highlight'><strong>Machine Learning Researcher</strong></span>.
-                  I am thrilled about this new position and look forward to starting in October!</span>
-              </li>
-              <li>
-                <span className="date">08/2025:</span>
-                <span className="content">Our paper “<span onClick={() =>
-                  window.open('https://arxiv.org/pdf/2504.11216', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models</strong>
-                  </span></>
-                </span>”
-                  has been accepted at <strong>FLTA25</strong>!</span>
-              </li>
-              <li>
-                <span className="date">07/2025:</span>
-                <span className="content">I am excited to announce that I <strong>successfully defended my Ph.D. on July 9</strong>!
-                  Check out my Ph.D. thesis <span onClick={() =>
-                    window.open('phd_thesis_eros_fani.pdf', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>here</strong>
-                  </span></>
-                </span>.</span>
-              </li>
-              <li>
-                <span className="date">06/2025:</span>
-                <span className="content">I will be attending <strong>ICML25 @ Vancouver</strong>! Join our poster session at the East Exhibition Hall A-B #E-1202, at the poster session 3, on Wednesday, July 16, at 11 a.m. local time. See you there!</span>
-              </li>
-              <li>
-                <span className="date">05/2025:</span>
-                <span className="content">Our new paper
-                  “<span onClick={() =>
-                    window.open('https://arxiv.org/pdf/2502.03340', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>Interaction-Aware Gaussian Weighting for Clustered Federated Learning</strong>
-                  </span></>
-                </span>”
-                  has been accepted at <strong>ICML25</strong>!</span>
-              </li>
-              <li>
-                <span className="date">03/2025:</span>
-                <span className="content">Check out our new paper,
-                  “<span onClick={() =>
-                    window.open('https://ieeexplore.ieee.org/abstract/document/10946159', '_blank')}>
-                  <><span className='highlight'>
-                    <strong>Resource-Efficient Personalization in
-                      Federated Learning with Closed-Form Classifiers</strong>
-                  </span></>”
-                </span>
-                  , accepted at
-                  <strong> IEEE Access</strong>!</span>
-              </li>
-              <li>
-                <span className="date">11/2024:</span>
-                <span className="content">I am happy to share that I am starting a new position as a
-                  <strong> Postdoctoral Fellow Software Engineer</strong> at the
-                  <strong> Basque Center for Applied Mathematics (BCAM)</strong>! </span>
-              </li>
-              <li>
-                <span className="date">09/2024:</span>
-                <span className="content">I am proud to announce that I have been awarded as
-                  <strong> Outstanding Reviewer</strong> for <strong>ECCV24</strong>! </span>
-              </li>
-            </ul>
+            <ReactMarkdown components={newsRenderers}>{newsMarkdown}</ReactMarkdown>
           </Container>
 
         </Col>
@@ -233,80 +153,7 @@ const About = () => {
             <CardGroup><h2> About me </h2></CardGroup>
 
             <Card.Footer className="about-description">
-              <p>
-                I am currently pursuing research on Mixture of Experts and Model Merging for Large Language Models.
-                Previously, I was a <strong>Machine Learning Researcher</strong> at <strong> Gensyn </strong>, a
-                <strong> Postdoctoral Fellow </strong> at the <strong> Basque Center for Applied Mathematics </strong>,
-                and a
-                <span onClick={() =>
-                  window.open('https://wearepal.ai/team', '_blank')}>
-                  <> <span className='highlight'>
-                    <strong> Senior Researcher </strong>
-                    in the Predictive Analytics Lab
-                    at the <strong> University of Sussex</strong>
-                  </span></>
-                </span>.
-
-                I have earned a <strong> Ph.D. in Artificial Intelligence </strong>
-                at the <strong>Visual and Multimodal Applied Learning Laboratory </strong>
-                within the Artificial Intelligence Hub
-                at the <strong> Polytechnic University of Turin </strong>
-                (thesis title:
-                <span onClick={() =>
-                  window.open('./phd_thesis_eros_fani.pdf', '_blank')}>
-                  <> <span className='highlight'>
-                    <strong> Addressing Heterogeneity in Federated Learning for Real-world Vision Applications</strong>
-                  </span></>
-                </span>
-                ).
-
-                My Ph.D. was conducted within the framework of the
-                <span onClick={() =>
-                  window.open('https://ellis.eu/student/2021-eros-fani', '_blank')}>
-                  <> <span className='highlight'>
-                    European Laboratory for Learning and Intelligent Systems (<strong>ELLIS</strong>)
-                    <strong> Ph.D. program</strong>
-                  </span></>
-                </span>,
-                a pan-European initiative for excellence in machine learning and AI.
-
-              </p>
-
-              <p>
-                I have published and presented my work at several international peer-reviewed
-                conferences and workshops, including
-                <strong> ICML</strong>,
-                <strong> ICLR</strong>,
-                <strong> NeurIPS</strong>,
-                <strong> CVPR</strong>,
-                <strong> IROS</strong>,
-                and <strong> WACV</strong>, and to an <strong> IEEE </strong> journal (check my publications
-                <> <a href="#research">
-                  <span className='highlight' style={{textDecoration: 'underline'}}>here</span>
-                </a></>
-                ).
-                Furthermore, I have served as a reviewer for many international conferences and journals,
-                and I was honored as an
-                <strong onClick={() =>
-                  window.open('certificate_outstanding_reviewer_ECCV24.pdf', '_blank')}>
-                  <> <span className='highlight'>Outstanding Reviewer</span> </>
-                </strong>
-                at <strong> ECCV </strong> in 2024.
-              </p>
-
-              <p>
-                My research focuses on <strong>building scalable, distributed models</strong> over uniquely
-                <strong> decentralised and heterogeneous infrastructure</strong>, and on addressing the challenge of
-                <strong> data heterogeneity </strong> in real-world applications of <strong> federated learning</strong>.
-                Additionally, I possess a solid track record in
-                <strong> semantic segmentation</strong>,
-                <strong> domain adaptation</strong>,
-                <strong> domain generalization</strong>,
-                <strong> semi-supervised learning</strong>.
-              </p>
-
-              <p>I am always driven by curiosity and have a strong interest in exploring new ideas and challenges within and beyond my current research.</p>
-
+              <ReactMarkdown components={aboutMeRenderers}>{aboutMeMarkdown}</ReactMarkdown>
             </Card.Footer>
 
             {/*<CardGroup> <h4> Affiliations </h4> </CardGroup>*/}
