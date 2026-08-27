@@ -45,34 +45,61 @@ const newsRenderers = {
   },
 };
 
+const NEWS_COLLAPSE_THRESHOLD = 50;
+const NEWS_EXPAND_THRESHOLD = 80;
+const NEWS_FULL_WIDTH_MAX_HEIGHT = 200;
+const NEWS_MARGIN_TOP = 10;
+
 const About = () => {
 
-  const [maxHeight, setMaxHeight] = useState(undefined);
-  const newsRef = useRef(null);
+  const [inlineMaxHeight, setInlineMaxHeight] = useState(undefined);
+  const [newsBelow, setNewsBelow] = useState(false);
+  const asideRef = useRef(null);
+  const anchorRef = useRef(null);
   const aboutMeRef = useRef(null);
 
   useEffect(() => {
-    const updateMaxHeight = () => {
-      if (newsRef.current && aboutMeRef.current) {
-        const newsRect = newsRef.current.getBoundingClientRect();
-        const aboutRect = aboutMeRef.current.getBoundingClientRect();
+    const updateLayout = () => {
+      if (!anchorRef.current || !aboutMeRef.current) return;
 
-        const maxHeightPx = aboutRect.bottom - newsRect.top;
+      const anchorBottom = anchorRef.current.getBoundingClientRect().bottom;
+      const aboutBottom = aboutMeRef.current.getBoundingClientRect().bottom;
+      const available = aboutBottom - anchorBottom - NEWS_MARGIN_TOP;
 
-        setMaxHeight(maxHeightPx > 0 ? maxHeightPx : 0);
-      }
+      setNewsBelow(prevBelow =>
+        prevBelow ? available < NEWS_EXPAND_THRESHOLD : available <= NEWS_COLLAPSE_THRESHOLD
+      );
+      setInlineMaxHeight(available > 0 ? available : 0);
     };
 
-    updateMaxHeight();
-    window.addEventListener('resize', updateMaxHeight);
-    window.addEventListener('scroll', updateMaxHeight, true);
+    updateLayout();
+
+    const observer = new ResizeObserver(updateLayout);
+    if (asideRef.current) observer.observe(asideRef.current);
+    if (aboutMeRef.current) observer.observe(aboutMeRef.current);
+    window.addEventListener('resize', updateLayout);
 
     return () => {
-      window.removeEventListener('resize', updateMaxHeight);
-      window.removeEventListener('scroll', updateMaxHeight, true);
+      observer.disconnect();
+      window.removeEventListener('resize', updateLayout);
     };
   }, []);
 
+  const newsSection = (fullWidth) => (
+    <Container
+      className="news"
+      style={{
+        overflowY: 'auto',
+        maxHeight: fullWidth
+          ? `${NEWS_FULL_WIDTH_MAX_HEIGHT}px`
+          : (inlineMaxHeight !== undefined ? `${inlineMaxHeight}px` : undefined),
+      }}
+      fluid
+    >
+      <h3> News </h3>
+      <ReactMarkdown components={newsRenderers}>{newsMarkdown}</ReactMarkdown>
+    </Container>
+  );
 
   return (
     <Container fluid id="about" className='section'>
@@ -86,51 +113,42 @@ const About = () => {
       </Row>
       <Row>
         <Col xs={12} md={4}>
-          <img src={profile} alt="Profile" className='profile'/>
-          <Container className="mb-lg-2 about-button-row" fluid>
-            <Button size='lg' className='about-button' onClick={() =>
-              window.open('https://scholar.google.com/citations?user=rwto7AgAAAAJ&hl=en', '_blank')}>
-              <Scholar/>
-            </Button>
-            <Button size='lg' className='about-button' onClick={() =>
-              window.open('https://github.com/Erosinho13', '_blank')}>
-              <Github/>
-            </Button>
-            <Button size='lg' className='about-button' onClick={() =>
-              window.open('https://www.linkedin.com/in/eros-fani/', '_blank')}>
-              <LinkedIn/>
-            </Button>
+          <div ref={asideRef}>
+            <img src={profile} alt="Profile" className='profile'/>
+            <Container className="mb-lg-2 about-button-row" fluid>
+              <Button size='lg' className='about-button' onClick={() =>
+                window.open('https://scholar.google.com/citations?user=rwto7AgAAAAJ', '_blank')}>
+                <Scholar/>
+              </Button>
+              <Button size='lg' className='about-button' onClick={() =>
+                window.open('https://github.com/Erosinho13', '_blank')}>
+                <Github/>
+              </Button>
+              <Button size='lg' className='about-button' onClick={() =>
+                window.open('https://www.linkedin.com/in/eros-fani/', '_blank')}>
+                <LinkedIn/>
+              </Button>
 
-            <div className="about-button-break" aria-hidden="true"/>
+              <div className="about-button-break" aria-hidden="true"/>
 
-            <Button size='lg' className='about-button' onClick={() =>
-              window.open('resume_v202608.pdf', '_blank')}>
-             <strong> Resume </strong>
-            </Button>
+              <Button size='lg' className='about-button' onClick={() =>
+                window.open('resume_v202608.pdf', '_blank')}>
+               <strong> Resume </strong>
+              </Button>
 
-            <Button size='lg' className='about-button' onClick={() =>
-              window.open('cv_v202608.pdf', '_blank')}>
-              <strong> CV </strong>
-            </Button>
-            
-          </Container>
+              <Button size='lg' className='about-button' onClick={() =>
+                window.open('cv_v202608.pdf', '_blank')}>
+                <strong> CV </strong>
+              </Button>
 
-          <Badge className='contacts' bg=''>
-            <a href='mailto:eros.fani@gmail.com'> eros.fani@gmail.com </a>
-          </Badge>
+            </Container>
 
-          <Container
-            className="news"
-            ref={newsRef}
-            style={{
-              overflowY: 'auto',
-              maxHeight: maxHeight ? `${maxHeight}px` : undefined,
-            }}
-            fluid
-          >
-            <h3> News </h3>
-            <ReactMarkdown components={newsRenderers}>{newsMarkdown}</ReactMarkdown>
-          </Container>
+            <Badge ref={anchorRef} className='contacts' bg=''>
+              <a href='mailto:eros.fani@gmail.com'> eros.fani@gmail.com </a>
+            </Badge>
+          </div>
+
+          {!newsBelow && newsSection(false)}
 
         </Col>
         <Col xs={12} md={8}>
@@ -146,6 +164,14 @@ const About = () => {
 
         </Col>
       </Row>
+
+      {newsBelow && (
+        <Row>
+          <Col xs={12} className='mb-5'>
+            {newsSection(true)}
+          </Col>
+        </Row>
+      )}
     </Container>
   );
 };
