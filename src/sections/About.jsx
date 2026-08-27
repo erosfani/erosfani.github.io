@@ -124,14 +124,14 @@ const About = () => {
                 </span>”, has been accepted at <span onClick={() =>
                   window.open('https://adaptfm.gitlab.io/', '_blank')}>
                   <><span className='highlight'>
-                    <strong>AdaptFM@ICLR26</strong>
+                    <strong>AdaptFM@ICML26</strong>
                   </span></>
                 </span>!</span>
               </li>
               <li>
                 <span className="date">04/2026:</span>
                 <span className="content">
-                  I will be attending <strong>ICML26 @ Rio de Janeiro</strong>!
+                  I will be attending <strong>ICLR26 @ Rio de Janeiro</strong>!
                   Join our poster session on Monday, April 27, 2026, at <strong>SPOT@ICLR</strong>. See you there!
                 </span>
               </li>
