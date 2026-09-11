@@ -139,12 +139,12 @@ const About = () => {
               <div className="about-button-break" aria-hidden="true"/>
 
               <Button size='lg' className='about-button' onClick={() =>
-                window.open('resume_v202608.pdf', '_blank')}>
+                window.open('resume.pdf', '_blank')}>
                <strong> Resume </strong>
               </Button>
 
               <Button size='lg' className='about-button' onClick={() =>
-                window.open('cv_v202608.pdf', '_blank')}>
+                window.open('cv.pdf', '_blank')}>
                 <strong> CV </strong>
               </Button>
 
