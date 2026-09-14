@@ -87,7 +87,7 @@
       "bibtex": "@article{nemeth2025diversity,\n  title={Diversity-Driven Learning: Tackling Spurious Correlations and Data Heterogeneity in Federated Models},\n  author={Németh, Gergely D and FanFan{`i}, Eros and Ng, Yeat Jeng and Caputo, Barbara and Lozano, Miguel Ángel and Oliver, Nuria and Quadrianto, Novi},\n  journal={Third IEEE International Conference on Federated Learning Technologies and Applications (FLTA)},\n  year={2025}\n}"
     },
     "website": "",
-    "code": "",
+    "code": "https://github.com/Erosinho13/SpuriousFL",
     "teaser_url": "assets/teasers/feddiverse.png",
     "description": "Federated Learning suffers from statistical heterogeneity due to imbalanced and non-IID client data. Six metrics are introduced to quantify this issue, and seven datasets are created to reflect real-world scenarios. A new client selection method, FedDiverse, improves performance by encouraging collaboration between diverse clients with minimal overhead."
   },
