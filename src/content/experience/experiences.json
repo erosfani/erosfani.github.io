@@ -11,68 +11,37 @@
     "org": "Basque Center for Applied Mathematics",
     "date": "Nov 2024 - Oct 2025",
     "color": "#2295d3",
+    "color_from": "#ffca51"
+  },
+  {
+    "role": "Senior Researcher",
+    "org": "Predictive Analytics Lab, University of Sussex",
+    "date": "May 2024 - Oct 2025",
+    "color": "#ffca51",
     "color_from": "#0d3652"
   },
   {
     "role": "MSc thesis supervisor",
-    "org": "Polytechnic University of Turin",
+    "org": "VANDAL lab, Polytechnic University of Turin",
     "date": "Sep 2023 - Oct 2024",
-    "topic": "Clustered Federated Learning",
     "color": "#0d3652"
   },
   {
     "role": "Teaching assistant",
     "org": "Polytechnic University of Turin",
     "date": "A.Y. 2022/23",
-    "color": "#0d3652",
-    "courses": [
-      {
-        "type": "Graduate",
-        "name": "Machine Learning and Deep Learning"
-      },
-      {
-        "type": "Graduate",
-        "name": "Advanced Machine Learning"
-      },
-      {
-        "type": "Graduate",
-        "name": "Data Analytics and Artificial Intelligence"
-      },
-      {
-        "type": "Graduate",
-        "name": "Web Applications I"
-      },
-      {
-        "type": "Undergraduate",
-        "name": "Computer Science"
-      }
-    ]
+    "color": "#0d3652"
   },
   {
     "role": "MSc thesis supervisor",
-    "org": "Polytechnic University of Turin",
+    "org": "VANDAL lab, Polytechnic University of Turin",
     "date": "Sep 2022 - Jul 2023",
-    "topic": "Federated Visual Geo-Localization",
     "color": "#0d3652"
   },
   {
     "role": "Teaching collaborator as an undergrad",
     "org": "Polytechnic University of Turin",
     "date": "A.Y. 2018/19",
-    "color": "#0d3652",
-    "courses": [
-      {
-        "type": "Undergraduate",
-        "name": "Algorithms and Programming"
-      },
-      {
-        "type": "Undergraduate",
-        "name": "Mathematical Analysis I"
-      },
-      {
-        "type": "Undergraduate",
-        "name": "Mathematical Analysis II"
-      }
-    ]
+    "color": "#0d3652"
   }
 ]
