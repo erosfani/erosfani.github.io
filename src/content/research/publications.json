@@ -1,5 +1,29 @@
 [
   {
+    "title": "Training-Free Dynamic Upcycling of Expert language Models",
+    "authors": [
+      {
+        "name": "Eros",
+        "surname": "Fanì"
+      },
+      {
+        "name": "Oğuzhan",
+        "surname": "Ersoy"
+      }
+    ],
+    "venue": "NeurIPS 2026. Previously presented at the ICLR 2026 Workshop on Scaling Post-training for LLMs (SPOT)",
+    "date": 2026,
+    "link": "https://arxiv.org/pdf/2603.29765",
+    "cite": {
+      "text": "Fanì, Eros, and Oğuzhan Ersoy. Training-Free Dynamic Upcycling of Expert Language Models. Advances in Neural Information Processing Systems (NeurIPS), 2026.",
+      "bibtex": "@inproceedings{fani2026training,\n  title={Training-Free Dynamic Upcycling of Expert Language Models},\n  author={Fan{`i}, Eros and Ersoy, O{\\u{g}}uzhan},\n  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},\n  year={2026},\n}"
+    },
+    "website": "https://blog.gensyn.ai/dume/",
+    "code": "https://github.com/gensyn-ai/dume",
+    "teaser_url": "assets/teasers/dume.png",
+    "description": "Training LLMs is prohibitively expensive, and they often lack domain-specific expertise because they rely on general knowledge datasets. Dynamic Upcycling MoE (DUME) combines dense experts trained on different domains to construct a unified MoE multitask model that preserves the capabilities of the original dense experts. DUME is training-free, scalable, and cheap."
+  },
+  {
     "title": "IR3DE: A Linear Router for Large Language Models",
     "authors": [
       {
@@ -22,30 +46,6 @@
     "code": "https://github.com/gensyn-ai/IR3DE",
     "teaser_url": "assets/teasers/ir3de.png",
     "description": "IR3DE is a lightweight ridge regression-based router that efficiently selects the best domain-expert LLM for each prompt without requiring expensive training. IR3DE allows domain experts to be added or removed at any time without retraining and always achieves performance comparable to or better than existing routing methods."
-  },
-  {
-    "title": "Training-Free Dynamic Upcycling of Expert language Models",
-    "authors": [
-      {
-        "name": "Eros",
-        "surname": "Fanì"
-      },
-      {
-        "name": "Oğuzhan",
-        "surname": "Ersoy"
-      }
-    ],
-    "venue": "Scaling Post-training for LLMs workshop (SPOT) @ ICLR",
-    "date": 2026,
-    "link": "https://arxiv.org/pdf/2603.29765",
-    "cite": {
-      "text": "Fanì, Eros, and Oğuzhan Ersoy. Training-Free Dynamic Upcycling of Expert Language Models. Scaling Post-training for LLMs (SPOT) workshop @ ICLR 2026.",
-      "bibtex": "@misc{fani2026training,\n  title={Training-Free Dynamic Upcycling of Expert Language Models},\n  author={Fan{`i}, Eros and Ersoy, O{\\u{g}}uzhan},\n  booktitle={Scaling Post-training for LLMs (SPOT) workshop @ ICLR 2026},\n  year={2026},\n}"
-    },
-    "website": "https://blog.gensyn.ai/dume/",
-    "code": "https://github.com/gensyn-ai/dume",
-    "teaser_url": "assets/teasers/dume.png",
-    "description": "Training LLMs is prohibitively expensive, and they often lack domain-specific expertise because they rely on general knowledge datasets. Dynamic Upcycling MoE (DUME) combines dense experts trained on different domains to construct a unified MoE multitask model that preserves the capabilities of the original dense experts. DUME is training-free, scalable, and cheap."
   },
   {
     "title": "FedDiverse: Tackling Data Heterogeneity in Federated Learning with Diversity-Driven Client Selection",

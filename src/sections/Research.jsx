@@ -43,7 +43,7 @@ function Research() {
 
                     if (index === 0) return (
                       <>
-                        <strong>E. Fanì</strong>, et. al. “<em>{publication.title}</em>”.
+                        <strong>E. Fanì</strong>, et al. “<em>{publication.title}</em>”.
                       </>
                     );
 
@@ -57,7 +57,7 @@ function Research() {
                     return (
                       <>
                         <span>{displayName}, {index > 1 ? <>…, </> : <></>}</span>
-                        <strong>E. Fanì</strong>{author.equal ? '*' : ''}, et. al. “<em>{publication.title}</em>”.
+                        <strong>E. Fanì</strong>{author.equal ? '*' : ''}, et al. “<em>{publication.title}</em>”.
                       </>
                     );
                   })()

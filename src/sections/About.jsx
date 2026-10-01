@@ -136,16 +136,11 @@ const About = () => {
                 <LinkedIn/>
               </Button>
 
-              <div className="about-button-break" aria-hidden="true"/>
+              {/* <div className="about-button-break" aria-hidden="true"/> */}
 
               <Button size='lg' className='about-button' onClick={() =>
-                window.open('resume.pdf', '_blank')}>
+                window.open('resume_eros_fani.pdf', '_blank')}>
                <strong> Resume </strong>
-              </Button>
-
-              <Button size='lg' className='about-button' onClick={() =>
-                window.open('cv.pdf', '_blank')}>
-                <strong> CV </strong>
               </Button>
 
             </Container>
