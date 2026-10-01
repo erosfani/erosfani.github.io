@@ -1,0 +1,59 @@
+{
+  "NeurIPS": {
+    "type": "Conference",
+    "color": "#e85d75"
+  },
+  "ICLR": {
+    "type": "Conference",
+    "color": "#9567e8"
+  },
+  "SPOT ICLR": {
+    "type": "Workshop",
+    "main_conference": "ICLR"
+  },
+  "AdaptFM ICML": {
+    "type": "Workshop",
+    "main_conference": "ICML"
+  },
+  "FLTA": {
+    "type": "Conference",
+    "color": "#4cc9f0"
+  },
+  "ICML": {
+    "type": "Conference",
+    "color": "#e09f3e"
+  },
+  "CVPR": {
+    "type": "Conference",
+    "color": "#118ab2"
+  },
+  "IEEE Access": {
+    "type": "Journal",
+    "color": "#c44536"
+  },
+  "FedVision CVPR": {
+    "type": "Workshop",
+    "main_conference": "CVPR"
+  },
+  "FL@FM NeurIPS": {
+    "type": "Workshop",
+    "main_conference": "NeurIPS"
+  },
+  "I-RIM": {
+    "type": "Conference",
+    "color": "#e76f51"
+  },
+  "WACV": {
+    "type": "Conference",
+    "color": "#2a9d8f"
+  },
+  "IROS": {
+    "type": "Conference",
+    "color": "#3a86ff"
+  },
+  "PhD Thesis": {
+    "type": "PhD Thesis",
+    "color": "#6c757d",
+    "show_tag": false
+  }
+}

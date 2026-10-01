@@ -12,6 +12,10 @@
       }
     ],
     "venue": "NeurIPS 2026. Previously presented at the ICLR 2026 Workshop on Scaling Post-training for LLMs (SPOT)",
+    "tags": [
+      "NeurIPS",
+      "SPOT ICLR"
+    ],
     "date": 2026,
     "link": "https://arxiv.org/pdf/2603.29765",
     "cite": {
@@ -36,6 +40,9 @@
       }
     ],
     "venue": "Resource-Adaptive Foundation Model Inference workshop (AdaptFM) @ ICML",
+    "tags": [
+      "AdaptFM ICML"
+    ],
     "date": 2026,
     "link": "https://arxiv.org/pdf/2606.06098",
     "cite": {
@@ -80,6 +87,9 @@
       }
     ],
     "venue": "IEEE International Conference on Federated Learning Technologies and Applications (FLTA)",
+    "tags": [
+      "FLTA"
+    ],
     "date": 2025,
     "link": "https://arxiv.org/pdf/2504.11216",
     "cite": {
@@ -100,6 +110,9 @@
       }
     ],
     "venue": "Ph.D. Thesis",
+    "tags": [
+      "PhD Thesis"
+    ],
     "date": 2025,
     "link": "phd_thesis_eros_fani.pdf",
     "cite": {
@@ -136,6 +149,9 @@
       }
     ],
     "venue": "Forty-second International Conference on Machine Learning (ICML)",
+    "tags": [
+      "ICML"
+    ],
     "date": 2025,
     "link": "https://arxiv.org/pdf/2502.03340",
     "cite": {
@@ -168,6 +184,9 @@
       }
     ],
     "venue": "IEEE Access",
+    "tags": [
+      "IEEE Access"
+    ],
     "date": 2025,
     "link": "https://ieeexplore.ieee.org/abstract/document/10946159",
     "cite": {
@@ -200,6 +219,9 @@
       }
     ],
     "venue": "Forty-first International Conference on Machine Learning (ICML)",
+    "tags": [
+      "ICML"
+    ],
     "date": 2024,
     "link": "https://arxiv.org/pdf/2406.01116",
     "cite": {
@@ -240,6 +262,9 @@
       }
     ],
     "venue": "FedVision Workshop in Conjunction with the IEEE/CVF Conference on Computer Vision and Pattern Recognition (FedVision CVPR)",
+    "tags": [
+      "FedVision CVPR"
+    ],
     "date": 2024,
     "link": "https://arxiv.org/pdf/2404.13324",
     "cite": {
@@ -272,6 +297,9 @@
       }
     ],
     "venue": "International Workshop on Federated Learning in the Age of Foundation Models in Conjunction with NeurIPS (FL@FM NeurIPS)",
+    "tags": [
+      "FL@FM NeurIPS"
+    ],
     "date": 2023,
     "link": "fed3r-paper.pdf",
     "cite": {
@@ -300,6 +328,9 @@
       }
     ],
     "venue": "5th Italian Conference on Robotics and Intelligent Machines (I-RIM)",
+    "tags": [
+      "I-RIM"
+    ],
     "date": 2023,
     "link": "https://arxiv.org/pdf/2309.13336",
     "cite": {
@@ -354,6 +385,9 @@
       }
     ],
     "venue": "IEEE/CVF winter conference on applications of computer vision (WACV)",
+    "tags": [
+      "WACV"
+    ],
     "date": 2023,
     "link": "https://arxiv.org/pdf/2210.02326",
     "cite": {
@@ -400,6 +434,9 @@
       }
     ],
     "venue": "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+    "tags": [
+      "IROS"
+    ],
     "date": 2022,
     "link": "https://arxiv.org/pdf/2202.13670",
     "cite": {
