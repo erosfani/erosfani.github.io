@@ -1,0 +1,108 @@
+[
+  {
+    "id": "model-merging-autoresearch",
+    "category": "AI research agents",
+    "date": "Oct 2026",
+    "startDate": "2026-10-11",
+    "image": "assets/teasers/model_merging_autoresearch.png",
+    "imageAlt": "Model Merging Autoresearch: an LLM agent reads, reasons, writes merging code, and iterates using repository, paper, figure, candidate, evaluation, budget, submission, and optional human-review tools. LoRA adapters are merged and evaluated on SNLI, MNLI, and SciTail, with scores feeding back to the agent.",
+    "github": "https://github.com/Erosinho13/model-merging-autoresearch"
+  },
+  {
+    "id": "ir3de-axl",
+    "category": "Decentralized AI",
+    "imageBackground": "#ffffff",
+    "date": "Sep 2026",
+    "startDate": "2026-09",
+    "image": "assets/teasers/ir3de_axl.jpeg",
+    "imageAlt": "IR3DE-AXL routing diagram on a white background: a user prompt passes through the IR3DE router to a code expert among general-chat, code, and math models, which returns a Python response",
+    "github": "https://github.com/gensyn-ai/IR3DE-AXL",
+    "resources": [
+      {
+        "url": "https://www.gensyn.ai/research/ir3de-axl-collective-inference-network",
+        "label": "IR3DE-AXL blog post"
+      },
+      {
+        "url": "https://www.gensyn.ai/research/look-beyond-one-size-fits-all-llms-with-ir3de",
+        "label": "IR3DE blog post"
+      }
+    ]
+  },
+  {
+    "id": "feddrive",
+    "category": "Federated vision",
+    "date": "2022–2023",
+    "startDate": "2022",
+    "image": "assets/teasers/feddrive.png",
+    "imageAlt": "FedDrive diagram showing a global server learning from driving clients in different road and weather domains",
+    "github": "https://github.com/Erosinho13/FedDrive",
+    "resource": {
+      "url": "https://feddrive.github.io/",
+      "label": "Project website"
+    }
+  },
+  {
+    "id": "fed3r",
+    "category": "Federated learning",
+    "date": "2023–2025",
+    "startDate": "2023",
+    "image": "assets/teasers/fed3r_access.png",
+    "imageAlt": "Fed3R workflow showing clients extracting pre-trained features, sharing statistics with a server, and building closed-form classifiers",
+    "github": "https://github.com/Erosinho13/Fed3R",
+    "resource": {
+      "url": "https://fed-3r.github.io/",
+      "label": "Project website"
+    }
+  },
+  {
+    "id": "this-website",
+    "category": "Web development",
+    "date": "2023–Present",
+    "startDate": "2023",
+    "image": "assets/teasers/website.svg",
+    "imageAlt": "The black dragon emblem used in Eros Fanì’s personal website branding",
+    "github": "https://github.com/erosfani/erosfani.github.io",
+    "resource": {
+      "url": "https://erosfani.github.io/",
+      "label": "Visit website"
+    }
+  },
+  {
+    "id": "first-person-action-recognition",
+    "category": "Egocentric vision",
+    "date": "May–Jun 2020",
+    "startDate": "2020-05-20",
+    "image": "assets/teasers/fpar-teaser.png",
+    "imageAlt": "First Person Action Recognition schematic: video passes through ResNet-34 with object-centric attention and ConvLSTM to an action classifier. An auxiliary branch learns 14-by-14 grayscale motion maps during training. Separate panels show static/dynamic discrimination and representation-flow variants.",
+    "github": "https://github.com/Erosinho13/FPAR-Project-MLDL",
+    "resource": {
+      "url": "https://docs.google.com/presentation/d/162lU5Zx6OCevq2bEqJnOwHj7vnnBYKvauBbMGVid7_k/edit?usp=sharing",
+      "label": "Presentation"
+    }
+  },
+  {
+    "id": "speaker-accent-recognition",
+    "category": "Audio machine learning",
+    "date": "Jul 2020",
+    "startDate": "2020-07",
+    "image": "assets/teasers/speaker-accent-recognition.png",
+    "imageAlt": "Speaker Accent Recognition schematic: 329 recordings represented by 12 MFCC features, preprocessing experiments, six classifier families, stratified splitting, five-fold grid search, and evaluation across six dataset accent groups",
+    "resource": {
+      "url": "https://colab.research.google.com/drive/1qo9TcGY7_tuRTptITdrOgAFUCowH4DyC?usp=sharing",
+      "label": "Colab notebook"
+    }
+  },
+  {
+    "id": "biopy",
+    "category": "Bioinformatics",
+    "date": "Jul 2021",
+    "startDate": "2021-07-14",
+    "image": "assets/teasers/biopy.png",
+    "imageAlt": "BioPy schematic showing separate RNA and chromatin-image encoders and decoders connected through a shared latent space, with adversarial training, MK-MMD, HAFN, and SAFN alignment variants and the A549, CD4+, and GDC datasets",
+    "github": "https://github.com/BioPyTeam/biopy",
+    "resource": {
+      "url": "https://docs.google.com/presentation/d/1PQnaNbE_BINcSLyMks-47APlWFtEvOBbIC9ztOMWJLE/edit?usp=sharing",
+      "label": "Presentation"
+    }
+  }
+]

@@ -49,6 +49,12 @@ function NavigationBar(props) {
                       onClick={() => setExpanded(false)}>
               Research
             </Nav.Link>
+            <Nav.Link href="#projects" active=""
+                      className={props.activeSection === 'projects' ? 'active_tab' : undefined}
+                      aria-current={props.activeSection === 'projects' ? 'location' : undefined}
+                      onClick={() => setExpanded(false)}>
+              Projects
+            </Nav.Link>
           </Nav>
 
           <ThemeToggle preference={preference} onChange={setPreference}/>

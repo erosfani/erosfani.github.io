@@ -8,9 +8,12 @@ import getWindowWidth from "../components/getWindowWidth.jsx";
 import React, { useState } from 'react';
 import CiteWindow from "../components/CiteWindow.jsx";
 import NewPage from "../components/icons/NewPage.jsx";
-import publications from "../content/research/publications.json";
+import publicationData from "../content/research/publications.json";
 import reviewer_conferences from "../content/research/reviewer_conferences.json";
 import venues from "../content/research/venues.json";
+
+const PUBLICATIONS_PER_PAGE = 3;
+const publications = [...publicationData].sort((first, second) => second.date - first.date);
 
 function getPublicationTypeClass(type) {
   return `publication-type-tag-${type.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
@@ -63,9 +66,11 @@ function Research() {
   const [showFilters, setShowFilters] = useState(false);
   const [cite, setCite] = useState({});
   const [activeFilter, setActiveFilter] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(PUBLICATIONS_PER_PAGE);
   const width = getWindowWidth();
   const toggleFilter = (filter) => {
     setActiveFilter((currentFilter) => currentFilter === filter ? null : filter);
+    setVisibleCount(PUBLICATIONS_PER_PAGE);
   };
   const isPublicationVisible = (publication) =>
     !activeFilter ||
@@ -73,6 +78,15 @@ function Research() {
     getPublicationTypes(publication.tags).includes(activeFilter) ||
     getYearFilter(publication.date) === activeFilter
   ;
+  const filteredPublications = publications.filter(isPublicationVisible);
+  const visiblePublications = filteredPublications.slice(0, visibleCount);
+  const hidePublications = () => {
+    setVisibleCount(PUBLICATIONS_PER_PAGE);
+    document.getElementById('publications-title')?.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      block: 'start',
+    });
+  };
 
   return (
     <Container fluid id="research" className="section research-section">
@@ -83,7 +97,7 @@ function Research() {
       </Row>
       <Row>
         <Col xs={12} className='section-subtitle'>
-          <h2> Publications </h2>
+          <h2 id="publications-title"> Publications </h2>
         </Col>
       </Row>
       <Row>
@@ -102,6 +116,7 @@ function Research() {
             className={`publication-filter-options${showFilters ? ' is-open' : ''}`}
             aria-label="Publication filters"
             aria-hidden={!showFilters}
+            inert={!showFilters}
           >
               <div className="publication-filter-row">
                 {allPublicationTypes.map((type) => (
@@ -148,15 +163,13 @@ function Research() {
           </div>
         </Col>
       </Row>
+      <div id="publications-list">
       {
-        publications.map((publication) => {
-          const isVisible = isPublicationVisible(publication);
-
-          return (
+        visiblePublications.map((publication, index) => (
           <Row
             key={publication.title}
-            className={`publication${isVisible ? '' : ' publication-filter-hidden'}`}
-            aria-hidden={!isVisible}
+            className={`publication${index >= PUBLICATIONS_PER_PAGE ? ' publication--revealed' : ''}`}
+            style={{'--publication-reveal-delay': `${(index % PUBLICATIONS_PER_PAGE) * 60}ms`}}
           >
             <Col xs={12} md={8} className='publication-description'>
               <h5>
@@ -239,7 +252,6 @@ function Research() {
               <Button size='sm' className="about-button publication-button"
                       onClick={() => {setShow(true); setCite(publication.cite)}}><Cite/></Button>
               {publication.description ? <Card className="publication-tldr">
-              <CiteWindow show={show} setShow={setShow} cite={cite} />
               <Card.Text>
                 {publication.description}
               </Card.Text>
@@ -248,14 +260,51 @@ function Research() {
             <Col xs={12} md={4} className="publication-teaser">
               {
                 publication.teaser_url ?
-                  <img src={publication.teaser_url} alt={publication.teaser_url} className='teaser'/>
+                  <div className="publication-teaser-frame">
+                    <img src={publication.teaser_url} alt={`${publication.title} teaser`} className='teaser' loading="lazy"/>
+                  </div>
                   : null
               }
             </Col>
           </Row>
-          );
-        })
+          ))
       }
+      </div>
+      <p className="visually-hidden" role="status">
+        Showing {visiblePublications.length} of {filteredPublications.length} publications.
+      </p>
+      {visibleCount < filteredPublications.length ? (
+        <div className="projects-reveal-actions publication-reveal-actions">
+          <button
+            type="button"
+            className="projects-show-more"
+            aria-controls="publications-list"
+            onClick={() => setVisibleCount((current) => Math.min(current + PUBLICATIONS_PER_PAGE, filteredPublications.length))}
+          >
+            Show more <span aria-hidden="true">↓</span>
+          </button>
+          <button
+            type="button"
+            className="projects-show-more"
+            aria-controls="publications-list"
+            onClick={() => setVisibleCount(filteredPublications.length)}
+          >
+            Show all
+          </button>
+        </div>
+      ) : visibleCount > PUBLICATIONS_PER_PAGE && (
+        <div className="projects-reveal-actions publication-reveal-actions">
+          <button
+            type="button"
+            className="projects-show-more"
+            aria-controls="publications-list"
+            onClick={hidePublications}
+          >
+            Hide <span aria-hidden="true">↑</span>
+          </button>
+        </div>
+      )}
+      <CiteWindow show={show} setShow={setShow} cite={cite} />
       <span className='section-footnote'> *equal contribution. </span>
 
       <Row>

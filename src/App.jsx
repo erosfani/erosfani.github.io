@@ -6,6 +6,7 @@ import {useState, useEffect} from "react";
 import Experience from "./sections/Experience.jsx";
 import Education from "./sections/Education.jsx";
 import Research from "./sections/Research.jsx";
+import Projects from "./sections/Projects.jsx";
 import LastUpdateDate from "./components/LastUpdateDate.jsx";
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
   useEffect(() => {
 
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'education', 'research'];
-      let current = '';
+      const sections = ['about', 'experience', 'education', 'research', 'projects'];
+      let current = 'about';
 
       sections.forEach(id => {
         const el = document.getElementById(id);
@@ -28,7 +29,8 @@ function App() {
       setActiveSection(current);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, {passive: true});
 
     return () => window.removeEventListener('scroll', handleScroll);
 
@@ -43,6 +45,7 @@ function App() {
         <Experience />
         <Education />
         <Research />
+        <Projects />
       </main>
 
       <footer className="footer">
