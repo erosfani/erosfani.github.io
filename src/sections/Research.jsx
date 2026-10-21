@@ -80,6 +80,9 @@ function Research() {
   ;
   const filteredPublications = publications.filter(isPublicationVisible);
   const visiblePublications = filteredPublications.slice(0, visibleCount);
+  const showEqualContributionNote = visiblePublications.some((publication) =>
+    publication.authors[0]?.equal && publication.authors[1]?.equal
+  );
   const hidePublications = () => {
     setVisibleCount(PUBLICATIONS_PER_PAGE);
     document.getElementById('publications-title')?.scrollIntoView({
@@ -305,7 +308,8 @@ function Research() {
         </div>
       )}
       <CiteWindow show={show} setShow={setShow} cite={cite} />
-      <span className='section-footnote'> *equal contribution. </span>
+      {showEqualContributionNote &&
+        <span className='section-footnote'> *equal contribution. </span>}
 
       <Row>
         <Col xs={12} className='section-subtitle' style={{marginTop: '15px'}}>
