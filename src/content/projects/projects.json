@@ -12,8 +12,8 @@
     "id": "ir3de-axl",
     "category": "Decentralized AI",
     "imageBackground": "#ffffff",
-    "date": "Sep 2026",
-    "startDate": "2026-09",
+    "date": "May-Sep 2026",
+    "startDate": "2026-05",
     "image": "assets/teasers/ir3de_axl.jpeg",
     "imageAlt": "IR3DE-AXL routing diagram on a white background: a user prompt passes through the IR3DE router to a code expert among general-chat, code, and math models, which returns a Python response",
     "github": "https://github.com/gensyn-ai/IR3DE-AXL",
@@ -31,7 +31,7 @@
   {
     "id": "feddrive",
     "category": "Federated vision",
-    "date": "2022–2023",
+    "date": "2022-2023",
     "startDate": "2022",
     "image": "assets/teasers/feddrive.png",
     "imageAlt": "FedDrive diagram showing a global server learning from driving clients in different road and weather domains",
@@ -44,7 +44,7 @@
   {
     "id": "fed3r",
     "category": "Federated learning",
-    "date": "2023–2025",
+    "date": "2023-2025",
     "startDate": "2023",
     "image": "assets/teasers/fed3r_access.png",
     "imageAlt": "Fed3R workflow showing clients extracting pre-trained features, sharing statistics with a server, and building closed-form classifiers",
@@ -57,10 +57,10 @@
   {
     "id": "this-website",
     "category": "Web development",
-    "date": "2023–Present",
+    "date": "2023-Present",
     "startDate": "2023",
     "image": "assets/teasers/website.svg",
-    "imageAlt": "The black dragon emblem used in Eros Fanì’s personal website branding",
+    "imageAlt": "The black dragon emblem used in Eros Fanì's personal website branding",
     "github": "https://github.com/erosfani/erosfani.github.io",
     "resource": {
       "url": "https://erosfani.github.io/",
@@ -70,7 +70,7 @@
   {
     "id": "first-person-action-recognition",
     "category": "Egocentric vision",
-    "date": "May–Jun 2020",
+    "date": "May-Jun 2020",
     "startDate": "2020-05-20",
     "image": "assets/teasers/fpar-teaser.png",
     "imageAlt": "First Person Action Recognition schematic: video passes through ResNet-34 with object-centric attention and ConvLSTM to an action classifier. An auxiliary branch learns 14-by-14 grayscale motion maps during training. Separate panels show static/dynamic discrimination and representation-flow variants.",
